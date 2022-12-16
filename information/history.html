@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <title>History</title>
+    <style>
+        .main-heading{
+            margin-bottom: 50px;
+            height: 150px;
+            width: 100%;
+            background-image: url(https://keansburgamusementpark.com/wp-content/uploads/2015/04/sharkproof-net_detaill_web.png);
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1{
+            font-family: 'La Belle Aurore', cursive;
+        }
+        .main-body{
+            width: 80%;
+            margin: 0 auto;
+        }
+        img{
+            width: 550px;
+            float: right;
+        }
+        hr{
+            background-image: url(https://keansburgamusementpark.com/wp-content/themes/keansburg/img/title-divider.png);
+            background-repeat: repeat-x;
+            border: none;
+            background-position: center center;
+            height: 7px;
+        }
+        .row{
+            display: flex;
+            margin: 60px 0;
+        }
+        .content{
+            width: 625.550px;
+            padding-right: 30px;
+            text-align: center;
+        }
+        .content p{
+            font-size: 21px;
+        }
+        .animation-right{
+            position: relative;
+            animation: moveRight 5s;
+        }
+        .animation-left{
+            position: relative;
+            animation: moveLeft 5s;
+        }
+        @keyframes moveRight {
+            from { left: 100px; }
+            to { left: 0px; }
+        }
+        @keyframes moveLeft {
+            from { right: 100px; }
+            to { right: 0px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main-heading">
+            <h1>History</h1>
+        </div>
+        <div class="main-body">
+            <div class="row">
+                <div class="content">
+                    <h1>1904</h1>
+                    <h1>Breaking Ground</h1>
+                    <p>Park founder William Gehlhaus and his associates purchase some waterfront property to build a summer resort.</p>
+                </div>
+                <div class="image">
+                    <img src="https://keansburgamusementpark.com/wp-content/uploads/2015/04/sharkproof-net_web.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="content">
+                    <h1>1910</h1>
+                    <h1>Keansburg Steamboat Company</h1>
+                    <p>New Yorkers can now take a 50-cent roundtrip voyage from Battery Park to Keansburg's newest boardwalk & attractions.</p>
+                </div>
+                <div class="image">
+                    <img src="https://keansburgamusementpark.com/wp-content/uploads/2015/04/ferry_web.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="content">
+                    <h1>1931</h1>
+                    <h1>Mystery Ride Opens</h1>
+                    <p>One of the world’s oldest operating dark rides in the world up until Hurricane Sandy, The Spook Housefirst opens.</p>
+                </div>
+                <div class="image">
+                    <img src="https://keansburgamusementpark.com/wp-content/uploads/2015/04/spook-house-1940s.jpg" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="content">
+                    <h1>1995</h1>
+                    <h1>The Next Generation</h1>
+                    <p>The grandsons of William Gehlhaus purchase the park.</p>
+                </div>
+                <div class="image">
+                    <img src="https://keansburgamusementpark.com/wp-content/uploads/2015/04/newspaper_detail_web1.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="content">
+                    <h1>1996</h1>
+                    <h1>A Second Park</h1>
+                    <p>Runaway Rapids Waterpark is built in 9 short months and brings a new era to the park.</p>
+                </div>
+                <div class="image">
+                    <img src="https://keansburgamusementpark.com/wp-content/uploads/2015/04/2004-11-09-13.26.50.jpg" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="content">
+                    <h1>2012</h1>
+                    <h1>Superstorm Sandy</h1>
+                    <p>Following a great summer, one of the most devastating storms in recent memory upends the park and surrounding communities.</p>
+                </div>
+                <div class="image">
+                    <img src="https://keansburgamusementpark.com/wp-content/uploads/2015/04/2012-10-31-13.53.58-2.jpg" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="content">
+                    <h1>2013</h1>
+                    <h1>Back in Action</h1>
+                    <p>The parks re-open after a great deal of teamwork, dedication, and repairing in Sandy’s wake.</p>
+                </div>
+                <div class="image">
+                    <img src="https://keansburgamusementpark.com/wp-content/uploads/2015/04/Park-Reopens.jpg" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="content">
+                    <h1>2015</h1>
+                    <h1>The Summer of Fun</h1>
+                    <p>You make your triumphant return to Keansburg Amusement Park & Runaway Rapids waterpark!</p>
+                </div>
+                <div class="image">
+                    <img src="https://keansburgamusementpark.com/wp-content/uploads/2015/04/Frog-Hopper.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+
+        window.onscroll = function() {
+            
+            for(let i = 0; i < $$('.content').length; i++) {
+                setInterval(() => $$('.content')[i].classList.add('animation-left'), 600+(i*1000));
+                setTimeout(() => {  clearInterval(); }, 1000+(i*1000));
+                
+            }
+            for(let i = 0; i < $$('.image').length; i++) {
+                setInterval(() => $$('.image')[i].classList.add('animation-right'), 600+(i*1000));
+                setTimeout(() => {  clearInterval(); }, 1000+(i*1000));
+            }
+        }
+    </script>
+</body>
+</html>
