@@ -71,7 +71,7 @@
             <ul>
                 <?php
                     $conn = mysqli_connect('localhost','root','','library');
-                    $sql = "SELECT title FROM famous";
+                    $sql = "SELECT title FROM menu";
                     $result = mysqli_query($conn,$sql);
                     $data = [];
                     while (($row = mysqli_fetch_array($result,1)) != null) {
