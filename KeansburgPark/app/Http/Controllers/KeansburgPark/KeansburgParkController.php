@@ -22,13 +22,20 @@ class KeansburgParkController extends Controller
         $data = DB::table('menu')->select("id","title","thumbnail","note","description","href_param")
             ->where('category_id',13)
             ->get();
-        $dataTitle = DB::table('menu')->select("id","title","thumbnail","note","description","href_param")
+        $dataTitle = DB::table('menu')->select("title","href_param","save","link_css")
                 ->where('category_id',13)
                 ->where('href_param',$href)
                 ->get();
-        return view("information.$href")->with([
+        return view("information.show")->with([
             'title'=>$dataTitle[0]->title.' - Keansburg Amusement Park & Runaway Rapids Waterpark',
-            'data'=>$data
+            'data'=>$data,
+            'showData'=>$dataTitle[0]->save,
+            'datacss'=>$dataTitle[0]->link_css
         ]);  
+    }
+
+    public function showAccommodations(Request $request)
+    {
+        
     }
 }

@@ -73,9 +73,7 @@
                         <h2>{{ $item->title }}</h2>
                         <p>{{ $item->description }}</p>
                         <p>{{ $item->note }}</p>
-                        <a href="http://"><div class="anh"></div></a>
-                        
-                        
+                        <a href="{{ route('news-showChilren',$item->href_param) }}"><div class="anh"></div></a>
                     </div>
                 </div>
             @endforeach

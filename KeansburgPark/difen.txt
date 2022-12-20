@@ -1,0 +1,108 @@
+-- 1 --
+        .main-body-inside{
+            display: flex;
+        }
+        .main-body-left p:first-child {
+            margin-top: 0;
+        }
+        .main-body-right{
+            margin-left: 30px;
+            width: 180px;
+            border: solid 1px gray;
+        }
+        .main-body-right p{
+            margin: 5px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .main-body-right span{
+            font-size: 12px;
+        }
+-- 2 --
+ko khác @import "css-news.css";
+-- 3 --
+        .main-inside,
+        .main-body-end{
+            display: flex;
+        }
+        .main-body-inside{
+            margin-right: 220px;
+        }
+        .main-body-inside p:last-child{
+            margin-bottom: 0px;
+        }
+        .main p{
+            margin-top: 15px;
+        }
+        .main-body-left,
+        .main-body-end-right {
+            width: 180px;
+            border: 1px solid gray;
+        }
+
+        .image-note {
+            width: 540px;
+            border: solid 1px gray;
+        }
+
+        .image-note p {
+            margin: 5px;
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+        .main-body-right p:first-child {
+            margin-top: 0px;
+        }
+
+        .main-body-left {
+            margin-top: 15px;
+            margin-right: 10px;
+        }
+        .main-body-left p,
+        .main-body-end-right p{
+            margin: 5px;
+        }
+        .main-body-end-left p{
+            margin-right: 30px;
+        }
+        .main-body-end-right{
+            margin-top: -230px;
+        }
+
+-- 5 --
+        .image{
+            margin-top: 20px;
+        }
+        .image p{
+            width: 528px;
+            margin-top: 0px;
+            border: solid 0.2px gray;
+            padding: 5px;
+        }
+        h2{
+            color: purple;
+            font-family: 'Leckerli One', cursive;
+        }
+
+-- 6 --
+ko khác
+-- 7 --
+ko khác
+-- 8 --
+ko khác
+-- 9 --
+ko khác
+-- 10 --
+ko khác
+-- 11 --
+        .main-right img{
+            width: 847.5px;
+        }
+    -- 12 --
+
+        .main-right img{
+            width: 847.5px;
+        }

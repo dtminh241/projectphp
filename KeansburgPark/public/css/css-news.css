@@ -1,0 +1,65 @@
+.main{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.main-left{
+    width: 214px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+.main-left h3{
+    margin-left: 20px;
+    border-bottom: solid 1px gray;
+    color: purple;
+}
+.main-left a:hover{
+    cursor: pointer;
+    color: orange;
+}
+.main-right{
+    width: 909px;
+}
+.main-right h1,
+.main-right h2{
+    color: purple;
+}
+.main-right p{
+    margin-top: 25px;
+    line-height: 25px;
+}
+.main-right p a{
+    color: blue;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul li {
+    margin-bottom: 10px;
+    color: orange;
+}
+.small{
+    font-size: 12px;
+    line-height: 5px;
+    color: grey;
+}
+.small p{
+    margin-top: 15px;
+    line-height: 5px;
+}
+.small a {
+    color: blue;
+}
+.image-note{
+    width: 540px;
+    border: 1px solid gray;
+    margin-left: 10px;
+}
+.image-note p{
+    margin: 5px;
+}
+.image-note span{
+    font-size: 12px;
+}

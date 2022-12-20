@@ -1,0 +1,14 @@
+@import "css-news.css";
+.image{
+    margin-top: 20px;
+}
+.image p{
+    width: 528px;
+    margin-top: 0px;
+    border: solid 0.2px gray;
+    padding: 5px;
+}
+h2{
+    color: purple;
+    font-family: 'Leckerli One', cursive;
+}

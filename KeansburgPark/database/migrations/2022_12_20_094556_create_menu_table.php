@@ -22,6 +22,8 @@ return new class extends Migration
             $table->string('description',400);
             $table->string('href_param',300);
             $table->timestamps();
+            $table->longText('save');
+            $table->string('link_css',100);
             $table->foreign('category_id')->references('id')->on('category');
         });
     }
