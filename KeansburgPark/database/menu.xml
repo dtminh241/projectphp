@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.0
+- https://www.phpmyadmin.net
+-
+- Máy chủ: 127.0.0.1
+- Thời gian đã tạo: Th12 20, 2022 lúc 11:56 AM
+- Phiên bản máy phục vụ: 10.4.24-MariaDB
+- Phiên bản PHP: 8.1.6
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="library" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="menu">
+                CREATE TABLE `menu` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `category_id` int(11) DEFAULT NULL,
+                  `title` varchar(200) CHARACTER SET utf8mb4 DEFAULT NULL,
+                  `thumbnail` varchar(200) CHARACTER SET utf8mb4 DEFAULT NULL,
+                  `note` longtext CHARACTER SET utf8mb4 DEFAULT NULL,
+                  `description` varchar(400) CHARACTER SET utf8mb4 DEFAULT NULL,
+                  `href_param` varchar(300) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  PRIMARY KEY (`id`),
+                  KEY `FK_category_famous` (`category_id`),
+                  CONSTRAINT `FK_category_famous` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Cơ sở dữ liệu: 'library'
+    -->
+    <database name="library">
+        <!-- Bảng menu -->
+        <table name="menu">
+            <column name="id">1</column>
+            <column name="category_id">13</column>
+            <column name="title">At New Jersey amusement park, vintage ride turns 80</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2017/04/usa-today-kap-3.jpg</column>
+            <column name="note">This article originally appeared on USA Today KEANSBURG, N.J. — One milestone birthday to celebrate as Keansburg Amusement Park opens in full this weekend: Its kiddie “pedal” cars turn 80. The seven vintage cars, painted yellow and green, have been carrying children around and around since the 1930s. “It’s one of a kind, really,” marketing director Katie […]</column>
+            <column name="description">April 9, 2017</column>
+            <column name="href_param">at-new-jersey-amusement-park-vintage-ride-turns-80</column>
+        </table>
+        <table name="menu">
+            <column name="id">2</column>
+            <column name="category_id">13</column>
+            <column name="title">Keansburg Amusement Parks Opens for Season Saturday</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2017/04/thepatch-0403.jpg</column>
+            <column name="note">This article originally appeared on Patch.com By Carly Baldwin, (Patch Staff) KEANSBURG, N.J. — Keansburg Amusement Park will officially open for the season Palm Sunday weekend, April 8 and 9, the park has confirmed. The amusement park will be open all spring break at 12 noon through Monday, April 17 (weather permitting). And the mermaids will […]</column>
+            <column name="description">April 3, 2017</column>
+            <column name="href_param">keansburg-amusement-parks-opens-for-season-saturday</column>
+        </table>
+        <table name="menu">
+            <column name="id">3</column>
+            <column name="category_id">13</column>
+            <column name="title">Iconic Restaurant Finally Reopens After Sandy</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/09/olde-heidelberg-5.jpg</column>
+            <column name="note">This article originally appeared on Asbury Park Press Three years ago this fall, a now infamous storm came calling. It blew across our beaches, ripped apart our hometowns and then retreated, taking with it much of what we love about life at the Shore. Earlier this month, we got a piece of that old life […]</column>
+            <column name="description">September 3, 2015</column>
+            <column name="href_param">iconic-restaurant-finally-reopens-after-sandy</column>
+        </table>
+        <table name="menu">
+            <column name="id">4</column>
+            <column name="category_id">13</column>
+            <column name="title">All You Need to Know About Summer at the Shore</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/06/cliffhangar-app.jpg</column>
+            <column name="note">This article originally appeared on Asbury Park Press Boardwalk &amp; Dining Time for lunch: If you&#039;re looking for something a little different, head to Shish Kabob Gourmet for shish kabobs and corn on the cob, both of which are grilled to order. There&#039;s also Cheesy&#039;s Pizza and Dylan&#039;s Walk-in Tacos and Hot Dogs; at the […]</column>
+            <column name="description">June 23, 2015</column>
+            <column name="href_param">all-you-need-to-know-about-summer-at-the-shore</column>
+        </table>
+        <table name="menu">
+            <column name="id">5</column>
+            <column name="category_id">13</column>
+            <column name="title">Pizza V Voted #2 by APP.com Summer Food Series</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/06/pizza-v.jpg</column>
+            <column name="note">This article originally appeared on Asbury Park Press WHY VISIT: &quot;We have people that come from Florida to get the pizza because they grew up here and love our pizza,&quot; said James Carusotto, whose father, Anthony, owns Pizza V. The pizzeria has been on the boardwalk for nearly 50 years. &quot;I was making pizza (on […]</column>
+            <column name="description">June 23, 2015</column>
+            <column name="href_param">pizza-v-voted-2-by-app-com-summer-food-series</column>
+        </table>
+        <table name="menu">
+            <column name="id">6</column>
+            <column name="category_id">13</column>
+            <column name="title">Keansburg Amusement Park ready to open</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/RockinTug.jpg</column>
+            <column name="note">This article originally appeared on NJ.com KEANSBURG - The Keansburg Amusement Park is set to open this weekend for the 2015 season. Several new attractions and rides have been restored. Park owner William Gelhaus says it&#039;s a great place to celebrate the nicer weather. &quot;We&#039;re expecting great things. This is the first weekend after a […]</column>
+            <column name="description">May 8, 2015</column>
+            <column name="href_param">keansburg-amusement-park-ready-to-open</column>
+        </table>
+        <table name="menu">
+            <column name="id">7</column>
+            <column name="category_id">13</column>
+            <column name="title">Jerry’s Jobs: Working at Keansburg Amusement Park</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/jerrys-jobs.jpg</column>
+            <column name="note">This article originally appeared on Asbury Park Press. KEANSBURG – My hand is hovering over the button. I am waiting for the signal, a thumbs up, from my colleague in the lookout tower. I&#039;m about to send two teenage girls hurtling 10 stories skyward at a speed of 35 miles an hour. This is the […]</column>
+            <column name="description">April 20, 2015</column>
+            <column name="href_param">jerry-s-jobs-working-at-keansburg-amusement-park</column>
+        </table>
+        <table name="menu">
+            <column name="id">8</column>
+            <column name="category_id">13</column>
+            <column name="title">Founded in 1904, Keansburg Amusement Park still charms</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/catepillar-ride.jpg</column>
+            <column name="note">This article originally appeared on Asbury Park Press In 1904, William Gehlhaus convinced five investors to join him in purchasing an area of marshland overlooking Raritan Bay, in hopes of creating a resort area. It was a bold move, especially because Gehlhaus was a baker from Atlantic Highlands, with no experience in real estate development. […]</column>
+            <column name="description">April 6, 2015</column>
+            <column name="href_param">founded-in-1904-keansburg-amusement-park-still-charms</column>
+        </table>
+        <table name="menu">
+            <column name="id">9</column>
+            <column name="category_id">13</column>
+            <column name="title">People are saying……</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/go-karts-5.jpg</column>
+            <column name="note">“A treasure of an amusement park in New Jersey. Waterpark and rides at a great price, never crowded and it has an old soul feeling about it. Every time we go to Keansburg we always have an awesome time and many fun memories. I wouldn’t go anywhere else.” Evelyn Lopes Delgado “A great place to […]</column>
+            <column name="description">April 6, 2015</column>
+            <column name="href_param">people-are-saying</column>
+        </table>
+        <table name="menu">
+            <column name="id">10</column>
+            <column name="category_id">13</column>
+            <column name="title">Construction begins on new Keansburg roller coaster to replace the ‘Wild Cat’ that was destroyed by Sandy</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2014/01/keansburg-construction.jpg</column>
+            <column name="note">This article originally appeared on New Jersey 12 KEANSBURG - Construction has begun on a new ride at Keansburg Amusement Park to replace the &quot;Wild Cat&quot; coaster mangled by the superstorm. The foundation is down for the new roller coaster, and parts of it have also arrived. It will have a loop taking passengers upside […]</column>
+            <column name="description">January 13, 2014</column>
+            <column name="href_param">construction-begins-on-new-keansburg-roller-coaster-to-replace-the-wild-cat-that-was-destroyed-by-sandy</column>
+        </table>
+        <table name="menu">
+            <column name="id">11</column>
+            <column name="category_id">13</column>
+            <column name="title">Sandy-ravaged Keansburg Amusement Park ready for Easter after exhausting repairs</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2013/04/keansburg-easter.jpg</column>
+            <column name="note">This article originally appeared on New Jersey 12 Pattie Cappuccio never doubted it. Not even the day after the storm, when her game booths at Keansburg Amusement Park were covered in knee-deep sand, left behind by chest-high flood waters. &quot;I knew Bill and Hank (Gehlhaus) would get us open. I really did,&quot; she said, as […]</column>
+            <column name="description">April 2, 2013</column>
+            <column name="href_param">sandy-ravaged-keansburg-amusement-park-ready-for-easter-after-exhausting-repairs</column>
+        </table>
+        <table name="menu">
+            <column name="id">12</column>
+            <column name="category_id">13</column>
+            <column name="title">Keansburg Amusement Park vows to rebuild after Hurricane Sandy destruction</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2012/11/hurricane-sandy-rebuild.jpg</column>
+            <column name="note">This article originally appeared on NJ.com KEANSBURG — Just days after getting battered by Hurricane Sandy, the co-owner of the Keansburg Amusement Park and Runaway Rapids Waterpark has already set a reopening date: April 8, 2013. That gives the Gehlhaus Family and its crew five months five months to clear out several feet of sand […]</column>
+            <column name="description">November 1, 2012</column>
+            <column name="href_param">keansburg-amusement-park-vows-to-rebuild-after-hurricane-sandy-destruction</column>
+        </table>
+        <table name="menu">
+            <column name="id">13</column>
+            <column name="category_id">17</column>
+            <column name="title">Mermaid Mondays @ Runaway Rapids</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2016/08/Mermaid-1.jpg</column>
+            <column name="note">NULL</column>
+            <column name="description">Mondays starting 6/7/22</column>
+            <column name="href_param">mermaid-mondays-runaway-rapids</column>
+        </table>
+        <table name="menu">
+            <column name="id">14</column>
+            <column name="category_id">17</column>
+            <column name="title">Fireworks 1st of July</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/IMG_4401.jpg</column>
+            <column name="note">Celebrate America’s Birthday with FIREWORKS. Keansburg Amusement Park &amp; Runaway Rapids will light up Friday July 1st with our BIGGEST show ever! Spend the day at Keansburg Amusement Park &amp; Runaway Rapids and cap it off with one of the most beautiful fireworks display on the Jersey Shore! Free entry!</column>
+            <column name="description">1st of july 2022</column>
+            <column name="href_param">fireworks-1st-of-july</column>
+        </table>
+        <table name="menu">
+            <column name="id">15</column>
+            <column name="category_id">17</column>
+            <column name="title">Jeep Jam &amp; Truck Show 2022</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2019/01/jeepjam-e1654104319345.jpeg</column>
+            <column name="note">Family fun Jeep &amp; Truck Show
+&lt;br&gt;
+REGISTRATION IS OPEN!!
+&lt;br&gt;
+June 18 2022
+&lt;br&gt;
+2pm to 6pm
+&lt;br&gt;
+Space is Limited 250 Street spots Available
+&lt;br&gt;
+Parking lot parking available for spectators as well.
+&lt;br&gt;
+PayPal confirmation must be on registration form!</column>
+            <column name="description">june 18 2022</column>
+            <column name="href_param">jeep-jam-truck-show-2022</column>
+        </table>
+        <table name="menu">
+            <column name="id">16</column>
+            <column name="category_id">17</column>
+            <column name="title">Bark in the Waterpark 2022</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2019/01/IMG_2958-e1654105003676.jpg</column>
+            <column name="note">NULL</column>
+            <column name="description">september 11 2022</column>
+            <column name="href_param">bark-in-the-waterpark-2022</column>
+        </table>
+        <table name="menu">
+            <column name="id">17</column>
+            <column name="category_id">14</column>
+            <column name="title">Blue Bay Inn</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2018/12/IMG_4583_P-300x300.jpg</column>
+            <column name="note">Just fifteen minutes away for our park, Blue Bay Inn is a charming boutique hotel in Atlantic Highlands. It&#039;s the perfect place to stay to enjoy all the pleasures of nearby Manhattan and The Jersey Shore at an affordable rate! Located close to the waterfront, guests are just footsteps from the shore where they can take in stunning views of the Manhattan skyline.</column>
+            <column name="description">51 First Avenue
+&lt;br&gt;
+Atlantic Highlands, NJ, 07716
+&lt;br&gt;
+732.708.9600
+&lt;br&gt;
+info@bluebayinn.com</column>
+            <column name="href_param">blue-bay-inn</column>
+        </table>
+        <table name="menu">
+            <column name="id">18</column>
+            <column name="category_id">14</column>
+            <column name="title">Middletown Quality Inn</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2018/12/37025537-300x240.jpg</column>
+            <column name="note">This gem of a hotel in Middletown is a short drive away from the park. The Quality Inn, is your ideal hotel when visiting the Jersey Shore and the Downtown Red Bank area.  All the expected traveler amenities are available to you, including their complimentary hot breakfast, served daily.</column>
+            <column name="description">750 State Route 35 South
+&lt;br&gt;
+Middletown, NJ, 07748
+&lt;br&gt;
+732.671.3400
+&lt;br&gt;
+gm.nj187@choicehotels.com</column>
+            <column name="href_param">middletown-quality-inn</column>
+        </table>
+        <table name="menu">
+            <column name="id">19</column>
+            <column name="category_id">14</column>
+            <column name="title">Holiday Inn Hazlet</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2018/12/download.jpg</column>
+            <column name="note">The holiday Inn is just a ten minute drive from our amusement park. With affordable prices and great amenities, you can&#039;t beat staying here. Plus kids stay and eat free!</column>
+            <column name="description">2870 Highway 35
+&lt;br&gt;
+Hazlet, NJ, 07730
+&lt;br&gt;
+732.888.2000</column>
+            <column name="href_param">holiday-inn-hazlet</column>
+        </table>
+        <table name="menu">
+            <column name="id">20</column>
+            <column name="category_id">19</column>
+            <column name="title">Nickerson’s Ice Cream</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/icecreamwafflecone.jpg</column>
+            <column name="note">Nickerson’s Ice cream has been serving freshly made hard ice cream since 1946 . Choose a cone, sundae,milkshake, or our crowd favorite; a famous waffle and ice cream sandwich! The combinations are endless with toppings like hot fudge, caramel, sprinkles, and more! </column>
+            <column name="description">NULL</column>
+            <column name="href_param">nickerson-s-ice-cream</column>
+        </table>
+        <table name="menu">
+            <column name="id">21</column>
+            <column name="category_id">19</column>
+            <column name="title">Cheesy’s Pizza: OPEN UNDER NEW OWNERSHIP 2021</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/IMG_1661-2048x1536.jpeg</column>
+            <column name="note">Craving some traditional boardwalk pizza? Cheesy’s is the place for you! Toppings include pepperoni, sausage, peppers, onions, and more! Traditional, Sicilian, or garlic knots! Yum!</column>
+            <column name="description">NULL</column>
+            <column name="href_param">cheesy-s-pizza-open-under-new-ownership-2021</column>
+        </table>
+        <table name="menu">
+            <column name="id">22</column>
+            <column name="category_id">19</column>
+            <column name="title">CJ’s Spot</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/kates-place.jpg</column>
+            <column name="note">Funnel cake &amp; fun traditional Jersey Shore boardwalk food!</column>
+            <column name="description">NULL</column>
+            <column name="href_param">cj-s-spot</column>
+        </table>
+        <table name="menu">
+            <column name="id">23</column>
+            <column name="category_id">19</column>
+            <column name="title">Girardi’s Kabobs</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/pexels-photo-604660.jpg</column>
+            <column name="note">Our original Fresh Grilled 1/4lb. Pork &amp; Chicken Kabobs were established here in the park in 1997.
+Also serving traditional Sabrett Hotdogs and other boardwalk favorites.</column>
+            <column name="description">NULL</column>
+            <column name="href_param">girardi-s-kabobs</column>
+        </table>
+        <table name="menu">
+            <column name="id">24</column>
+            <column name="category_id">19</column>
+            <column name="title">Dippin’ Dots</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/unspecified-2.jpg</column>
+            <column name="note">Not your traditional scoop, Dippin Dots is the cool way to enjoy an old favorite. Enjoy several unique flavors of this delicious dot delicacy!</column>
+            <column name="description">NULL</column>
+            <column name="href_param">dippin-dots</column>
+        </table>
+        <table name="menu">
+            <column name="id">25</column>
+            <column name="category_id">19</column>
+            <column name="title">Coastal Ice Cream</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/shutterstock_82222750.jpg</column>
+            <column name="note">Enjoy a boardwalk favorite! Traditional Soft Served Ice Cream! Top off your treat with one of our several delicious toppings or order a Sundae, Thick-Shake, Slushie or Frozen Yogurt!</column>
+            <column name="description">NULL</column>
+            <column name="href_param">coastal-ice-cream</column>
+        </table>
+        <table name="menu">
+            <column name="id">26</column>
+            <column name="category_id">19</column>
+            <column name="title">Pizza V</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/pizza-v.jpg</column>
+            <column name="note">A boardwalk tradition, Pizza V serves classic thin crust Jersey pizza!</column>
+            <column name="description">NULL</column>
+            <column name="href_param">pizza-v</column>
+        </table>
+        <table name="menu">
+            <column name="id">27</column>
+            <column name="category_id">19</column>
+            <column name="title">Nickersons</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/nickersons.jpg</column>
+            <column name="note">This open air eatery has all of your classic boardwalk favorites from sausage sandwiches and cheesesteaks to hamburgers and hotdogs. You can find something for everyone! And don’t forget to add some delicious cheese fries to your order.</column>
+            <column name="description">NULL</column>
+            <column name="href_param">nickersons</column>
+        </table>
+        <table name="menu">
+            <column name="id">28</column>
+            <column name="category_id">19</column>
+            <column name="title">Snowie Hawaiian Shaved Ice</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/shaved-ice.jpg</column>
+            <column name="note">A cool treat on a hot summer day, Snowie shaved ice comes in fun flavors to go!</column>
+            <column name="description">NULL</column>
+            <column name="href_param">snowie-hawaiian-shaved-ice</column>
+        </table>
+        <table name="menu">
+            <column name="id">29</column>
+            <column name="category_id">19</column>
+            <column name="title">Miami Club</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/miami-club-raw-bar.jpg</column>
+            <column name="note">Serving up the best seafood, the Miami Club offers a raw bar, seafood, burgers and the best homemade clam chowder in the Bayshore. Stop in for a Sugar Island rum bucket or our twist on the traditional Rum &amp; Coke, an Island &amp; Coke. The Miami Club offers a clean friendly sit-down atmosphere to order up food and drinks.</column>
+            <column name="description">NULL</column>
+            <column name="href_param">miami-club</column>
+        </table>
+        <table name="menu">
+            <column name="id">30</column>
+            <column name="category_id">19</column>
+            <column name="title">Heidelberg – Now Open!!</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/unspecified-1.jpg</column>
+            <column name="note">Established in 1934, enjoy one of Keansburg Amusement Park&#039;s oldest eateries! Famed hot dogs are again available along with German beer!</column>
+            <column name="description">NULL</column>
+            <column name="href_param">heidelberg--now-open</column>
+        </table>
+        <table name="menu">
+            <column name="id">31</column>
+            <column name="category_id">19</column>
+            <column name="title">Sam’s Snack Shack</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/65969426_2296696633727942_6903619514059980800_n.jpg</column>
+            <column name="note">Delicious boardwalk snacks to eat on the go!</column>
+            <column name="description">NULL</column>
+            <column name="href_param">sam-s-snack-shack</column>
+        </table>
+        <table name="menu">
+            <column name="id">32</column>
+            <column name="category_id">19</column>
+            <column name="title">Glenda’s Great Fries</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/glenda-great-fries.jpg</column>
+            <column name="note">Classic boardwalk hand cut fries served with vinegar. A Keansburg Amusement Park boardwalk tradition!</column>
+            <column name="description">NULL</column>
+            <column name="href_param">glenda-s-great-fries</column>
+        </table>
+        <table name="menu">
+            <column name="id">33</column>
+            <column name="category_id">19</column>
+            <column name="title">Mambo Nando’s : NEW 2021</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/IMG_2960.jpg</column>
+            <column name="note">Mambo Nando&#039;s Puerto Rican American cuisine- NEW 2021. View their menu here:&lt;a href=&quot;http://&quot;&gt;mambonandos_menu_v5&lt;/a&gt;
+&lt;br&gt;
+Click here to visit their website:&lt;a href=&quot;https://mambonandosrestaurant.com/&quot;&gt;mambonandos.com&lt;/a&gt;</column>
+            <column name="description">NULL</column>
+            <column name="href_param">mambo-nando-s-new-2021</column>
+        </table>
+        <table name="menu">
+            <column name="id">34</column>
+            <column name="category_id">19</column>
+            <column name="title">Zeppole’s</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/zeppole.jpg</column>
+            <column name="note">The absolute best zeppole on the Jersey Shore! Freshly made daily.</column>
+            <column name="description">NULL</column>
+            <column name="href_param">zeppole-s</column>
+        </table>
+        <table name="menu">
+            <column name="id">35</column>
+            <column name="category_id">19</column>
+            <column name="title">Cotton Candy</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/cottoncandy.jpg</column>
+            <column name="note">Serving Cotton Candy, Fresh Lemonade, Churros, Pretzels and Refreshments!</column>
+            <column name="description">NULL</column>
+            <column name="href_param">cotton-candy</column>
+        </table>
+        <table name="menu">
+            <column name="id">36</column>
+            <column name="category_id">19</column>
+            <column name="title">Boardwalk Grill at the Pavilion Bar</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/fried-chicken-chicken-fried-crunchy-60616.jpg</column>
+            <column name="note">New venue, Boardwalk Grill at the Pavilion Bar, will serve up delicious gyros and more!</column>
+            <column name="description">NULL</column>
+            <column name="href_param">boardwalk-grill-at-the-pavilion-bar</column>
+        </table>
+        <table name="menu">
+            <column name="id">37</column>
+            <column name="category_id">19</column>
+            <column name="title">Flavor Burst</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2016/01/icecream.jpg</column>
+            <column name="note">Flavor Burst offers a variety of premium flavors from which to choose. The intrigue will capture your attention and the flavor that will bring you back for more.</column>
+            <column name="description">NULL</column>
+            <column name="href_param">flavor-burst</column>
+        </table>
+    </database>
+</pma_xml_export>

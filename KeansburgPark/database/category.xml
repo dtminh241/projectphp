@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.0
+- https://www.phpmyadmin.net
+-
+- Máy chủ: 127.0.0.1
+- Thời gian đã tạo: Th12 20, 2022 lúc 11:47 AM
+- Phiên bản máy phục vụ: 10.4.24-MariaDB
+- Phiên bản PHP: 8.1.6
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="library" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="category">
+                CREATE TABLE `category` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(50) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Cơ sở dữ liệu: 'library'
+    -->
+    <database name="library">
+        <!-- Bảng category -->
+        <table name="category">
+            <column name="id">1</column>
+            <column name="name">Keansburg Amusement Park</column>
+        </table>
+        <table name="category">
+            <column name="id">2</column>
+            <column name="name">Runaway Rapids</column>
+        </table>
+        <table name="category">
+            <column name="id">3</column>
+            <column name="name">Hollowgraves Haunted Manor</column>
+        </table>
+        <table name="category">
+            <column name="id">4</column>
+            <column name="name">Go Karts</column>
+        </table>
+        <table name="category">
+            <column name="id">5</column>
+            <column name="name">Keansburg Games</column>
+        </table>
+        <table name="category">
+            <column name="id">6</column>
+            <column name="name">Beach</column>
+        </table>
+        <table name="category">
+            <column name="id">7</column>
+            <column name="name">Batting Cages</column>
+        </table>
+        <table name="category">
+            <column name="id">8</column>
+            <column name="name">Arcades</column>
+        </table>
+        <table name="category">
+            <column name="id">9</column>
+            <column name="name">Fishing Pier</column>
+        </table>
+        <table name="category">
+            <column name="id">10</column>
+            <column name="name">General Information</column>
+        </table>
+        <table name="category">
+            <column name="id">11</column>
+            <column name="name">Directions &amp; Parking</column>
+        </table>
+        <table name="category">
+            <column name="id">12</column>
+            <column name="name">History</column>
+        </table>
+        <table name="category">
+            <column name="id">13</column>
+            <column name="name">News &amp; Press Releases</column>
+        </table>
+        <table name="category">
+            <column name="id">14</column>
+            <column name="name">Accommodations</column>
+        </table>
+        <table name="category">
+            <column name="id">15</column>
+            <column name="name">Service Animals</column>
+        </table>
+        <table name="category">
+            <column name="id">16</column>
+            <column name="name">Location Shoots</column>
+        </table>
+        <table name="category">
+            <column name="id">17</column>
+            <column name="name">Events</column>
+        </table>
+        <table name="category">
+            <column name="id">18</column>
+            <column name="name">Fundraising</column>
+        </table>
+        <table name="category">
+            <column name="id">19</column>
+            <column name="name">Food</column>
+        </table>
+        <table name="category">
+            <column name="id">20</column>
+            <column name="name">Ticket Information</column>
+        </table>
+        <table name="category">
+            <column name="id">21</column>
+            <column name="name">Ride Height &amp; Ticketing</column>
+        </table>
+        <table name="category">
+            <column name="id">22</column>
+            <column name="name">Discounts &amp; Specials</column>
+        </table>
+        <table name="category">
+            <column name="id">23</column>
+            <column name="name">Buy Tickets</column>
+        </table>
+    </database>
+</pma_xml_export>
