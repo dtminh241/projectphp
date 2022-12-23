@@ -1,0 +1,34 @@
+.main-heading{
+    margin-bottom: 50px;
+    height: 150px;
+    width: 100%;
+    background-image: url(https://keansburgamusementpark.com/wp-content/uploads/2017/03/beach.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding-top: 50px;
+}
+.main h1{
+    font-family: 'La Belle Aurore', cursive;
+    color: purple;
+}
+.main-body{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.main img{
+    width: 550px;
+    height: 367px;
+}
+.main-body-left{
+    margin-right: 30px;
+}
+.title{
+    line-height: 25px;
+    font-size: 15px;
+}
+.title h2{
+    text-align: center;
+    color: purple;
+}

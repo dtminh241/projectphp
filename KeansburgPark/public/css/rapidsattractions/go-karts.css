@@ -1,0 +1,63 @@
+.main-heading{
+    margin-bottom: 50px;
+    height: 150px;
+    width: 100%;
+    background-image: url(https://keansburgamusementpark.com/wp-content/uploads/2015/03/go-karts_header2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding-top: 50px;
+}
+.main h1{
+    font-family: 'La Belle Aurore', cursive;
+    color: purple;
+}
+.main-body{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.main-body-left{
+    padding: 0 20px;
+    margin-left: 70px;
+    padding-top: 35px;
+    width: 550px;
+    height: 676px;
+}
+.main-body-right{
+    padding: 0 15px;
+    margin-top: 35px;
+    border-left: solid 2px grey;
+    height: 530px;
+    width: 558px;
+}
+.title{
+    text-align: center;
+    color: orange;
+    margin-bottom: 20px;
+}
+.main-body-left table{
+    height: 60px;
+    margin-bottom: 30px;
+}
+.main-body-left table tr td:first-child{
+    width: 82%;
+}
+
+.main-body-right table{
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.main-body-right table tr td:first-child{
+    width: 95%;
+    padding-bottom: 10px;
+}
+
+.main-body-right p{
+    color: grey;
+}
+.main img{
+    width: 510px;
+    height: 367px;
+}

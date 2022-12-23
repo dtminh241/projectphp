@@ -1,0 +1,18 @@
+.main-heading{
+    text-align: center;
+    color: purple;
+}
+.main-body{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+.main img{
+    width: 60%;
+    margin-left: 20%;
+}
+.main-body img{
+    width: 600px;
+    height: 650px;
+    margin: 0;
+}

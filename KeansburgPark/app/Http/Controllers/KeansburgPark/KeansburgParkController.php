@@ -8,13 +8,42 @@ use Illuminate\Support\Facades\DB;
 
 class KeansburgParkController extends Controller
 {
-    public function showInfor(Request $request,$href)
+    public function showRR(Request $request)
+    {
+        $data = DB::table('menu')->select("title","thumbnail","href_param")->where('category_id',2)->get();
+        return view("rapidsattractions.runaway-rapids")->with([
+            'title'=>"Runaway Rapids - Keansburg Amusement Park & Runaway Rapids Waterpark",
+            'data'=>$data
+        ]);
+    }
+
+    public function showRRChil(Request $request,$href)
+    {
+        $data = DB::table('menu')->select("title","thumbnail","note")
+                ->where('category_id',2)
+                ->where('href_param',$href)
+                ->get();
+        return view("rapidsattractions.showrrchil")->with([
+            'title'=>$data[0]->title.' - Keansburg Amusement Park & Runaway Rapids Waterpark',
+            'data'=>$data[0]
+        ]);
+    }
+
+    public function show(Request $request,$href)
     {
         $data = DB::table('category')->select('name')->where('href_param',$href)->get();
-        return view('information.'.$href)->with([
+        return view('keansburgpark.'.$href)->with([
             'title'=>$data[0]->name.' - Keansburg Amusement Park & Runaway Rapids Waterpark'
         ]);
     }
+
+    // public function showInfor(Request $request,$href)
+    // {
+    //     $data = DB::table('category')->select('name')->where('href_param',$href)->get();
+    //     return view('information.'.$href)->with([
+    //         'title'=>$data[0]->name.' - Keansburg Amusement Park & Runaway Rapids Waterpark'
+    //     ]);
+    // }
 
     public function showHistory(Request $request)
     {
@@ -114,11 +143,11 @@ class KeansburgParkController extends Controller
         ]);
     }
 
-    public function showGp(Request $request,$href)
-    {
-        $data = DB::table('category')->select('name')->where('href_param',$href)->get();
-        return view('groupandparty.'.$href)->with([
-            'title'=>$data[0]->name.' - Keansburg Amusement Park & Runaway Rapids Waterpark'
-        ]);
-    }
+    // public function showGp(Request $request,$href)
+    // {
+    //     $data = DB::table('category')->select('name')->where('href_param',$href)->get();
+    //     return view('groupandparty.'.$href)->with([
+    //         'title'=>$data[0]->name.' - Keansburg Amusement Park & Runaway Rapids Waterpark'
+    //     ]);
+    // }
 }

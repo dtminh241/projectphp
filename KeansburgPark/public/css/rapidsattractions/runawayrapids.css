@@ -1,0 +1,79 @@
+.main-heading{
+    margin-bottom: 50px;
+    height: 150px;
+    width: 100%;
+    background-image: url(https://thamhiemmekong.com/wp-content/uploads/2020/01/c%C3%B4ng-vi%C3%AAn-n%C6%B0%E1%BB%9Bc-Thanh-Long-02.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding-top: 50px;
+}
+.main h1{
+    font-family: 'La Belle Aurore', cursive;
+    color: purple;
+}
+.main-body{
+    width: 80%;
+    margin: 0 auto;
+}
+.column {
+    width: 277.5px;
+    height: 482px;
+    margin-right: 15px;
+}
+
+.image {
+    height: 277.5px;
+}
+
+.main img {
+    width: 277.5px;
+    height: 277.5px;
+}
+
+.row0,
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+    display: flex;
+}
+
+.text {
+    width: 277.5px;
+    height: 108px;
+    background-color: rgb(0, 0, 0);
+}
+
+.title {
+    height: 60px;
+    background-color: #f9f9f9;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.title h3 {
+    color: #552f7d;
+    font-family: 'Leckerli One', cursive;
+    font-size: 25px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.main button {
+    background-color: #54317b;
+    color: #ffffff;
+    padding: 14px 20px;
+    border-radius: 20px;
+}
+
+.main a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.show {
+    background-color: #f9f9f9;
+    padding-left: 80px;
+}

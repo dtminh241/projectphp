@@ -1,6 +1,14 @@
 <?php
 use Illuminate\Support\Facades\Route;
 
+Route::prefix('/rides-attractions')->group(function() {
+    Route::prefix('/runaway-rapids')->group(function() {
+        Route::get('/',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showRR'])->name('rides-showRR');
+        Route::get('/{href}.html',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showRRChil'])->name('rides-showRRChil');
+    });
+    
+});
+
 Route::prefix('/information')->group(function() {
     Route::prefix('/news')->group(function() {
         Route::get('/',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showNews'])->name('news-shownews');
@@ -19,7 +27,7 @@ Route::prefix('/information')->group(function() {
     Route::get('/parkmap',function(){
         return redirect(asset("image/Keansburg-Map-2014.pdf"));
     })->name("information-parkmap");
-    Route::get('/{href}',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showInfor'])->name('information-showInfor');
+    // Route::get('/{href}',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showInfor'])->name('information-showInfor');
 });
 
 Route::prefix('/food')->group(function() {
@@ -27,6 +35,9 @@ Route::prefix('/food')->group(function() {
     Route::get('/{href}.html',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showFoodChil'])->name('food-showfoodchil');
 });
 
-Route::prefix('/group-party')->group(function() {
-    Route::get('/{href}',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showGp'])->name('group-showGp');
-});
+// Route::prefix('/group-party')->group(function() {
+//     Route::get('/{href}',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showGp'])->name('group-showGp');
+// });
+
+Route::get('/{href}.html',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'show'])->name('show');
+//group-showGp  information-showInfor

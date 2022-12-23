@@ -1,0 +1,54 @@
+.main-heading{
+    margin-bottom: 50px;
+    height: 150px;
+    width: 100%;
+    background-image: url(https://keansburgamusementpark.com/wp-content/uploads/2015/03/haunted-manor_header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding-top: 50px;
+}
+.main h1{
+    font-family: 'La Belle Aurore', cursive;
+    color: purple;
+}
+.main-body{
+    width: 80%;
+    margin: 0 auto;
+}
+.intro{
+    font-size: 29px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.info{
+    display: flex;
+}
+.history,
+.admission{
+    width: 555px;
+}
+.history{
+    margin-right: 30px;
+}
+.title{
+    font-family: "Miltonian Tattoo", Arial, Helvetica, sans-serif;
+    color: orange;
+    font-size: 27px;
+    text-align: center;
+}
+.history-info,
+.admission-info{
+    font-size: 15px;
+    line-height: 25px;
+}
+.history-info,
+.text,
+.main img{
+    width: 555px;
+    height: 370px;
+}
+.text {
+    height: 100px;
+}
