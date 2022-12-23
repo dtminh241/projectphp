@@ -1,0 +1,51 @@
+@import "css-news.css";
+.main-inside,
+.main-body-end{
+    display: flex;
+}
+.main-body-inside{
+    margin-right: 220px;
+}
+.main-body-inside p:last-child{
+    margin-bottom: 0px;
+}
+.main p{
+    margin-top: 15px;
+}
+.main-body-left,
+.main-body-end-right {
+    width: 180px;
+    border: 1px solid gray;
+}
+
+.image-note {
+    width: 540px;
+    border: solid 1px gray;
+}
+
+.image-note p {
+    margin: 5px;
+}
+
+span {
+    font-size: 12px;
+}
+
+.main-body-right p:first-child {
+    margin-top: 0px;
+}
+
+.main-body-left {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.main-body-left p,
+.main-body-end-right p{
+    margin: 5px;
+}
+.main-body-end-left p{
+    margin-right: 30px;
+}
+.main-body-end-right{
+    margin-top: -230px;
+}

@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+}
+.logo{
+    background-color:#3d007b;
+    display: flex;
+    width: 100%;
+    height: 158px;
+}
+.left-logo{
+    margin-top: 35px;
+    padding-left: 24%;
+}
+.center-logo img{
+    height: 158px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.top-logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.login{
+    color: white;
+    margin-top: 120px;
+    margin-left: 220px;
+}
+.login a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.login a:hover{
+    color: orange;
+}
+.nav {
+    background-color: rgb(54, 23, 66);
+    color: white;
+    position: relative;
+}
+.nav ul{
+    display: flex;
+    margin: 0;
+    padding-left:22.5%;
+}
+.nav ul a{
+    text-decoration: none;
+    color: white;
+}
+.nav ul li{
+    list-style-type: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.nav ul li:hover{
+    background-color: rgb(198, 44, 165);
+}
+.rides-nav,
+.tickets-nav,
+.information-nav,
+.group-nav
+{   
+    position: absolute;
+    width: 15%;
+    color: white;
+    background-color: rgb(198, 44, 165);
+    top:50px;
+}
+.rides-nav ul,
+.tickets-nav ul,
+.information-nav ul,
+.group-nav ul{
+    display: block;
+    margin: 0px;
+    padding: 0;
+}
+.rides-nav ul a,
+.tickets-nav ul a,
+.information-nav ul a,
+.group-nav ul a{
+    text-decoration: none;
+    color: white;
+}
+.rides-nav ul li,
+.tickets-nav ul li,
+.information-nav ul li,
+.group-nav ul li{
+    list-style-type: none;
+    padding: 10 15px;
+    cursor: pointer;
+}
+.rides-nav ul li:hover{
+    background-color: rgb(54, 23, 66);
+}
+.tickets-nav ul li:hover{
+    background-color: rgb(54, 23, 66);
+}
+.information-nav ul li:hover{
+    background-color: rgb(54, 23, 66);
+}
+.group-nav ul li:hover{
+    background-color: rgb(54, 23, 66);
+}
+.rides-nav{
+    left: 25.9%;
+    display: none;
+}
+.tickets-nav{
+    left: 39.1%;
+    display: none;
+}
+.information-nav{
+    left: 50%;
+    display: none;
+}
+.group-nav{
+    left: 58.8%;
+    display: none;
+}
+.sticky{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}

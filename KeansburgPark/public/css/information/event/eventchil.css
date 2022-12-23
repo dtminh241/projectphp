@@ -1,0 +1,37 @@
+.main {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: purple;
+}
+
+.main-body {
+    display: flex;
+}
+
+.image img {
+    width: 600px;
+    height: 400px;
+}
+
+.image {
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.info {
+    width: 350px;
+}
+
+.info p {
+    line-height: 30px;
+    margin-top: 0px;
+}
+.info a {
+    text-decoration: none;
+    color: blue;
+}
+
+.back {
+    margin-top: 50px;
+}

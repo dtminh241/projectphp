@@ -1,69 +1,51 @@
---4 --
-.main{
-            display: flex;
+.main {
             width: 80%;
             margin: 0 auto;
+            margin-top: 30px;
         }
-        .main-left{
-            width: 214px;
-            margin-right: 60px;
-            margin-top: 20px;
+
+        .main-body {
+            display: flex;
         }
-        .main-left h3{
-            margin-left: 20px;
-            border-bottom: solid 1px gray;
-            color: purple;
+
+        .image img {
+            width: 600px;
+            height: 400px;
         }
-        .main-left a:hover{
-            cursor: pointer;
-            color: orange;
+
+        .image {
+            margin-left: 65px;
+            margin-right: 65px;
         }
-        .main-right{
-            width: 909px;
+
+        .info {
+            width: 350px;
         }
-        .main-right h1,
-        .main-right h2{
-            color: purple;
+
+        .info p {
+            line-height: 30px;
         }
-        .main-right p{
-            margin-top: 25px;
-            line-height: 25px;
-        }
-        .main-right p a{
-            color: blue;
-            font-size: 12px;
-        }
-        a{
+        .info a {
             text-decoration: none;
-            color: black;
-        }
-        ul li {
-            margin-bottom: 10px;
-            color: orange;
-        }
-        .small{
-            font-size: 12px;
-            line-height: 5px;
-            color: grey;
-        }
-        .small p{
-            margin-top: 15px;
-            line-height: 5px;
-        }
-        .small a {
             color: blue;
         }
-        .image-note{
-            width: 540px;
-            border: 1px solid gray;
-            margin-left: 10px;
-        }
-        .image-note p{
-            margin: 5px;
-        }
-        .image-note span{
-            font-size: 12px;
-        }
-    </style>
 
+        .back {
+            margin-top: 150px;
+        }
 
+        -- 1 -- 
+
+        .back{
+            margin-top: 200px;
+        }
+
+        --3--
+        .back {
+            margin-top: 50px;
+        }
+        -- 4 --
+       
+        .back {
+            margin-top: 50px;
+        }

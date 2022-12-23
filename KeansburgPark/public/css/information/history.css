@@ -1,0 +1,48 @@
+.main-heading{
+    margin-bottom: 50px;
+    height: 150px;
+    width: 100%;
+    background-image: url(https://keansburgamusementpark.com/wp-content/uploads/2015/04/sharkproof-net_detaill_web.png);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+h1{
+    font-family: 'La Belle Aurore', cursive;
+    color: purple;
+}
+.main-body{
+    width: 80%;
+    margin: 0 auto;
+}
+.image{
+    width: 560px;
+}
+.main img{
+    width: 550px;
+    float: right;
+}
+.row{
+    display: flex;
+    margin: 60px 0;
+}
+.content{
+    width: 625.550px;
+    padding-right: 50px;
+    padding-left: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+.content p{
+    font-size: 21px;
+}
+
+hr{
+    background-image: url(https://keansburgamusementpark.com/wp-content/themes/keansburg/img/title-divider.png);
+    background-repeat: repeat-x;
+    border: none;
+    background-position: center center;
+    height: 7px;
+}

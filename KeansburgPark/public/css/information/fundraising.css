@@ -1,0 +1,76 @@
+.heading-main{
+    background-image: url(https://keansburgamusementpark.com/wp-content/uploads/2015/04/fundraiser.jpg);
+    margin-bottom: 50px;
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding-top: 50px;
+    color: purple;
+}
+.title-info h2{
+    text-align: center;
+    color: purple;
+}
+.info{
+    width: 55%;
+    margin: 0 auto;
+}
+.title-info {
+    opacity: 0;
+}
+.info-body{
+    opacity: 0;
+}
+.info table{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+.info table tr{
+    margin-top: 10px;
+}
+.info table tr td{
+    text-align: center;
+}
+.choose-from{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.choose-from img{
+    width: 360px;
+    height: 240px;
+}
+.choose-from h2{
+    text-align: center;
+    color: purple;
+}
+.choose-from-right{
+    opacity: 0;
+}
+.image1{
+    margin-bottom: 30px;
+}
+.animation-top-bot{
+    position: relative;
+    opacity: 1 !important;
+    animation: moveTop 2s;
+    animation-timing-function: ease-in;
+}
+.animation-right-left{
+    position: relative;
+    opacity: 1 !important;
+    animation: moveRight 2s;
+    animation-timing-function: ease-in;
+}
+@keyframes moveTop{
+    from {right:150px;}
+    to{right:0px;}
+}
+@keyframes moveRight{
+    from{left:150px;}
+    to{left:0px}
+}

@@ -1,0 +1,21 @@
+@import "css-news.css";
+
+.main-body-inside{
+    display: flex;
+}
+.main-body-left p:first-child {
+    margin-top: 0;
+}
+.main-body-right{
+    margin-left: 30px;
+    width: 180px;
+    border: solid 1px gray;
+}
+.main-body-right p{
+    margin: 5px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.main-body-right span{
+    font-size: 12px;
+}
