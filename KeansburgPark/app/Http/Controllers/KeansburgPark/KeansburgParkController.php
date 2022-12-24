@@ -37,14 +37,6 @@ class KeansburgParkController extends Controller
         ]);
     }
 
-    // public function showInfor(Request $request,$href)
-    // {
-    //     $data = DB::table('category')->select('name')->where('href_param',$href)->get();
-    //     return view('information.'.$href)->with([
-    //         'title'=>$data[0]->name.' - Keansburg Amusement Park & Runaway Rapids Waterpark'
-    //     ]);
-    // }
-
     public function showHistory(Request $request)
     {
         $data = DB::table('menu')->select("title","thumbnail","note","description")->where('category_id',12)->get();
@@ -143,11 +135,14 @@ class KeansburgParkController extends Controller
         ]);
     }
 
-    // public function showGp(Request $request,$href)
-    // {
-    //     $data = DB::table('category')->select('name')->where('href_param',$href)->get();
-    //     return view('groupandparty.'.$href)->with([
-    //         'title'=>$data[0]->name.' - Keansburg Amusement Park & Runaway Rapids Waterpark'
-    //     ]);
-    // }
+    public function showTimeTicket(Request $request)
+    {
+        $dataTimeKid = DB::table('kiddierides')->get();
+        $dataTimeMajor = DB::table('majorrides')->get();
+        return view("ticket.ride-height-ticketing")->with([
+            'title'=>'Ride Height & Ticketing - Keansburg Amusement Park & Runaway Rapids Waterpark',
+            'timekid'=>$dataTimeKid,
+            'timemajor'=>$dataTimeMajor
+        ]);
+    }
 }

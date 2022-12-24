@@ -31,42 +31,41 @@
         </ul>
         <div class="rides-nav">
             <ul> 
-                <li><a href="{{ route('rides-showRR') }}">Runaway Rapids</a></li>
-                <li><a href="{{ route('show',"hollowgraves-haunted-manor") }}">Hollowgraves Haunted Manor</a></li>
-                <li><a href="{{ route('show',"go-karts") }}">Go Karts</a></li>
-                {{-- <li><a href="{{ route('show',"keansburg-games") }}">Keansburg Games</a></li> --}}
-                <li><a href="{{ route('show',"beach") }}">Beach</a></li>
-                <li><a href="{{ route('show',"batting-cages") }}">Batting Cages</a></li>
-                <li><a href="{{ route('show',"arcades") }}">Arcades</a></li>
-                <li><a href="{{ route('show',"fishing-pier") }}">Fishing Pier</a></li>
+                <a href="{{ route('rides-showRR') }}"><li>Runaway Rapids</li></a>
+                <a href="{{ route('show',"hollowgraves-haunted-manor") }}"><li>Hollowgraves Haunted Manor</li></a>
+                <a href="{{ route('show',"go-karts") }}"><li>Go Karts</li></a>
+                <a href="{{ route('show',"beach") }}"><li>Beach</li></a>
+                <a href="{{ route('show',"batting-cages") }}"><li>Batting Cages</li></a>
+                <a href="{{ route('show',"arcades") }}"><li>Arcades</li></a>
+                <a href="{{ route('show',"fishing-pier") }}"><li>Fishing Pier</li></a>
             </ul>
         </div>
         <div class="tickets-nav">
-            <ul>
-                <li>Ticket Information</li>
-                <li>Ride Height & Ticketing</li>
-                <li>Discounts & Specials</li>
+            <ul> 
+                <a href="{{ route('show',"ticket-information") }}"><li>Ticket Information</li></a>
+                <a href="{{ route('rides-showTimeTicket'); }}"><li>Ride Height & Ticketing</li></a>
+                <a href="{{ route('show',"discounts-specials") }}"><li>Discounts & Specials</li></a>
                 <li>Buy Tickets</li>
             </ul>
         </div>
         <div class="information-nav">
             <ul>
-                <li><a href="{{ route('show',"general-information") }}">General Information</a></li>
-                <li><a href="{{ route('show',"directions-parking") }}">Directions & Parking</a></li>
-                <li><a href="{{ route("information-operating") }}">Operating Calendar</a></li>
-                <li><a href="{{ route('information-showhistory') }}">History</a></li>
-                <li><a href="{{ route('news-shownews') }}">News</a></li>
-                <li><a href="{{ route("information-parkmap") }}">Park Map</a></li>
-                <li><a href="{{ route('information-showAccommodations') }}">Accommodations</a></li>
-                <li><a href="{{ route('show',"service-animals") }}">Service Animals</a></li>
-                <li><a href="{{ route('information-showEvent') }}">Events</a></li>
-                <li><a href="{{ route('show',"fundraising")}}">Fundraising</a></li>
+                <a href="{{ route('show',"general-information") }}"><li>General Information</li></a>
+                <a href="{{ route('show',"directions-parking") }}"><li>Directions & Parking</li></a>
+                <a href="{{ route("information-operating") }}"><li>Operating Calendar</li></a>
+                <a href="{{ route('information-showhistory') }}"><li>History</li></a>
+                <a href="{{ route('news-shownews') }}"><li>News</li></a>
+                <a href="{{ route("information-parkmap") }}"><li>Park Map</li></a>
+                <a href="{{ route('information-showAccommodations') }}"><li>Accommodations</li></a>
+                <a href="{{ route('show',"service-animals") }}"><li>Service Animals</li></a>
+                <a href="{{ route('information-showEvent') }}"><li>Events</li></a>
+                <a href="{{ route('show',"fundraising")}}"><li>Fundraising</li></a>
             </ul>
         </div>
         <div class="group-nav">
             <ul>
-                <li><a href="{{ route('show',"group-package") }}">Group Packages</a></li>
-                <li><a href="{{ route('show',"birthday-package") }}">Birthday Packages</a></li>
+                <a href="{{ route('show',"group-package") }}"><li>Group Packages</li></a>
+                <a href="{{ route('show',"birthday-package") }}"><li>Birthday Packages</li></a>
             </ul>
         </div>
     </div>

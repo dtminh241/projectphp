@@ -1,0 +1,90 @@
+.main-heading{
+    margin-bottom: 50px;
+    height: 150px;
+    width: 100%;
+    background-image: url(https://keansburgamusementpark.com/wp-content/uploads/2015/04/IMG_4380.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding-top: 50px;
+}
+.main h1{
+    font-family: 'La Belle Aurore', cursive;
+    color: purple;
+}
+.main-body{
+    width: 80%;
+    margin: 0 auto;
+}
+.main-inside{
+    display: flex;
+    padding-left: 60px;
+}
+.main-inside table tr td{
+    padding-bottom: 10px;
+}
+.main-inside table tr td:last-child{
+    text-align: right;
+    
+}
+.title{
+    color: purple;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.main-left{
+    width: 354px;
+    padding-right: 10px;
+}
+.main-left table tr td:last-child{
+    padding-left: 15px;
+}
+.main-center{
+    width: 360px;
+    border-left: solid 2px grey;
+    padding: 0 15px;
+
+}
+.main-center table tr td:last-child{
+    padding-left: 160px;
+}
+.main-right{
+    width: 354px;
+    border-left: solid 2px grey;
+    padding: 0 15px;
+    line-height: 25px;
+}
+.text{
+    width: 354px;
+    float: right;
+    margin-right: 6%;
+    line-height: 25px;
+}
+.main-body-end{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 300px;
+    line-height: 25px;
+}
+.main-body-end a{
+    margin-top: 20px;
+    font-family: 'Leckerli One', cursive;
+    color: #00cfff;
+    line-height: 35px;
+    font-size: 32px;
+    text-decoration: none;
+    margin-left: 28%;
+}
+.main-body-end a:hover{
+    color: orange;
+}
+.main-end{
+    width: 60%;
+    margin-top: 80px;
+    border-top: solid 2px grey;
+    margin-left: 18%;
+    padding-left: 4%;
+    padding-top: 80px;
+    text-align: center;
+    color: grey;
+}
