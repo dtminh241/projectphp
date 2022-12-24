@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.0
+- https://www.phpmyadmin.net
+-
+- Máy chủ: 127.0.0.1
+- Thời gian đã tạo: Th12 24, 2022 lúc 04:09 PM
+- Phiên bản máy phục vụ: 10.4.24-MariaDB
+- Phiên bản PHP: 8.1.6
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="keansburgpark" collation="utf8mb4_unicode_ci" charset="utf8mb4">
+            <pma:table name="kiddierides">
+                CREATE TABLE `kiddierides` (
+                  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                  `Kiddie_Rides` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `Tickets_Needed` int(11) DEFAULT NULL,
+                  `Minimum_Height_Required` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  `Adults_Allowed_to_Ride` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  `created_at` timestamp NULL DEFAULT NULL,
+                  `updated_at` timestamp NULL DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Cơ sở dữ liệu: 'keansburgpark'
+    -->
+    <database name="keansburgpark">
+        <!-- Bảng kiddierides -->
+        <table name="kiddierides">
+            <column name="id">1</column>
+            <column name="Kiddie_Rides">Miniature Train</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">32&quot;</column>
+            <column name="Adults_Allowed_to_Ride">NO</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">2</column>
+            <column name="Kiddie_Rides">Frog Hopper</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">36&quot;</column>
+            <column name="Adults_Allowed_to_Ride">NO</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">3</column>
+            <column name="Kiddie_Rides">Balloon Ferris Wheel</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">54&quot; to ride alone Under 54&quot; w/ adult</column>
+            <column name="Adults_Allowed_to_Ride">YES (2 tickets w/ child in yellow)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">4</column>
+            <column name="Kiddie_Rides">Airplanes</column>
+            <column name="Tickets_Needed">1</column>
+            <column name="Minimum_Height_Required">32&quot;</column>
+            <column name="Adults_Allowed_to_Ride">NO</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">5</column>
+            <column name="Kiddie_Rides">Antique Cars</column>
+            <column name="Tickets_Needed">1</column>
+            <column name="Minimum_Height_Required">32&quot;</column>
+            <column name="Adults_Allowed_to_Ride">NO</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">6</column>
+            <column name="Kiddie_Rides">Merry-Go-Round</column>
+            <column name="Tickets_Needed">1</column>
+            <column name="Minimum_Height_Required">32&quot;</column>
+            <column name="Adults_Allowed_to_Ride">YES only w/ children 32&quot;-42&quot; (no charge)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">7</column>
+            <column name="Kiddie_Rides">Motorcycles</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">32&quot; (50&quot; max. height)</column>
+            <column name="Adults_Allowed_to_Ride">NO</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">8</column>
+            <column name="Kiddie_Rides">Boats</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">32&quot;</column>
+            <column name="Adults_Allowed_to_Ride">NO</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">9</column>
+            <column name="Kiddie_Rides">Skyfighter</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">32&quot;</column>
+            <column name="Adults_Allowed_to_Ride">NO</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">10</column>
+            <column name="Kiddie_Rides">Rotary Whip</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">32&quot;</column>
+            <column name="Adults_Allowed_to_Ride">NO</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">11</column>
+            <column name="Kiddie_Rides">Magic Ring</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">32&quot;</column>
+            <column name="Adults_Allowed_to_Ride">NO</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">12</column>
+            <column name="Kiddie_Rides">Fire Engines</column>
+            <column name="Tickets_Needed">1</column>
+            <column name="Minimum_Height_Required">32&quot;</column>
+            <column name="Adults_Allowed_to_Ride">NO</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">13</column>
+            <column name="Kiddie_Rides">Red Baron</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">36&quot;</column>
+            <column name="Adults_Allowed_to_Ride">YES (2 tickets w/ child in yellow)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">14</column>
+            <column name="Kiddie_Rides">Sea Serpent Roller Coaster</column>
+            <column name="Tickets_Needed">3</column>
+            <column name="Minimum_Height_Required">36&quot; to ride alone 33&quot;-36&quot; w/ adult</column>
+            <column name="Adults_Allowed_to_Ride">YES (3 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">15</column>
+            <column name="Kiddie_Rides">Log Flume</column>
+            <column name="Tickets_Needed">3</column>
+            <column name="Minimum_Height_Required">36&quot; to ride alone 33&quot;-36&quot; w/ adult</column>
+            <column name="Adults_Allowed_to_Ride">YES (3 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">16</column>
+            <column name="Kiddie_Rides">Rockin&#039; Tug</column>
+            <column name="Tickets_Needed">3</column>
+            <column name="Minimum_Height_Required">42&quot; to ride alone 36&quot;-42&quot; w/ adult</column>
+            <column name="Adults_Allowed_to_Ride">YES (3 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">17</column>
+            <column name="Kiddie_Rides">Super Slide</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">42&quot; to ride alone 36&quot;-42&quot; w/ adult</column>
+            <column name="Adults_Allowed_to_Ride">YES (2 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">18</column>
+            <column name="Kiddie_Rides">Mini Himalaya</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">38&quot; to ride alone 33&quot;-39&quot; w/ adult</column>
+            <column name="Adults_Allowed_to_Ride">Yes (2 tickets w/ child)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">19</column>
+            <column name="Kiddie_Rides">Caterpillar</column>
+            <column name="Tickets_Needed">1</column>
+            <column name="Minimum_Height_Required">32&quot;</column>
+            <column name="Adults_Allowed_to_Ride">NO</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">20</column>
+            <column name="Kiddie_Rides">Tea Cups</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">36&quot;</column>
+            <column name="Adults_Allowed_to_Ride">YES (2 tickets w/ child)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">21</column>
+            <column name="Kiddie_Rides">Rock Wall</column>
+            <column name="Tickets_Needed">4</column>
+            <column name="Minimum_Height_Required">50 lb. min. 250 lb. max</column>
+            <column name="Adults_Allowed_to_Ride">YES (4 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">22</column>
+            <column name="Kiddie_Rides">Happy Swing</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">36&quot;</column>
+            <column name="Adults_Allowed_to_Ride">NO</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">23</column>
+            <column name="Kiddie_Rides">Jump Around</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">36&quot;</column>
+            <column name="Adults_Allowed_to_Ride">NO</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">24</column>
+            <column name="Kiddie_Rides">Oval Whip</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">36&quot;</column>
+            <column name="Adults_Allowed_to_Ride">NO</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">25</column>
+            <column name="Kiddie_Rides">Swings</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">36&quot;</column>
+            <column name="Adults_Allowed_to_Ride">NO</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">26</column>
+            <column name="Kiddie_Rides">Dragons</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">36&quot; to ride alone 33&quot;-36&quot; w/ adult</column>
+            <column name="Adults_Allowed_to_Ride">YES (2 tickets w/ child in yellow)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">27</column>
+            <column name="Kiddie_Rides">Rio Grande Train</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">36&quot;</column>
+            <column name="Adults_Allowed_to_Ride">YES (2 tickets w/ child in yellow)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="kiddierides">
+            <column name="id">28</column>
+            <column name="Kiddie_Rides">Raiders</column>
+            <column name="Tickets_Needed">2</column>
+            <column name="Minimum_Height_Required">42&quot; to ride alone 36&quot;- 42&quot; w/ adult</column>
+            <column name="Adults_Allowed_to_Ride">YES (2 tickets w/ child in yellow)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+    </database>
+</pma_xml_export>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.0
+- https://www.phpmyadmin.net
+-
+- Máy chủ: 127.0.0.1
+- Thời gian đã tạo: Th12 24, 2022 lúc 04:10 PM
+- Phiên bản máy phục vụ: 10.4.24-MariaDB
+- Phiên bản PHP: 8.1.6
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="keansburgpark" collation="utf8mb4_unicode_ci" charset="utf8mb4">
+            <pma:table name="majorrides">
+                CREATE TABLE `majorrides` (
+                  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                  `Major_Rides` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `Tickets_Needed` int(11) DEFAULT NULL,
+                  `Minimum_Height_Required` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  `Adults_Allowed_to_Ride` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  `created_at` timestamp NULL DEFAULT NULL,
+                  `updated_at` timestamp NULL DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Cơ sở dữ liệu: 'keansburgpark'
+    -->
+    <database name="keansburgpark">
+        <!-- Bảng majorrides -->
+        <table name="majorrides">
+            <column name="id">1</column>
+            <column name="Major_Rides">Carousel</column>
+            <column name="Tickets_Needed">3</column>
+            <column name="Minimum_Height_Required">42&quot; to ride alone 36&quot;-42&quot; w/ adult</column>
+            <column name="Adults_Allowed_to_Ride">YES (3 tickets) (Free, if riding w/ 36&quot;-42&quot;)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="majorrides">
+            <column name="id">2</column>
+            <column name="Major_Rides">Looping Coaster</column>
+            <column name="Tickets_Needed">6</column>
+            <column name="Minimum_Height_Required">56&quot; to ride alone 49&quot;-56&quot; w/ adult</column>
+            <column name="Adults_Allowed_to_Ride">YES (6 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="majorrides">
+            <column name="id">3</column>
+            <column name="Major_Rides">Wave Swinger</column>
+            <column name="Tickets_Needed">5</column>
+            <column name="Minimum_Height_Required">48&quot;</column>
+            <column name="Adults_Allowed_to_Ride">YES (5 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="majorrides">
+            <column name="id">4</column>
+            <column name="Major_Rides">Pharoah&#039;s Fury</column>
+            <column name="Tickets_Needed">5</column>
+            <column name="Minimum_Height_Required">48&quot; to ride alone 42&quot;-48&quot; w/ adult</column>
+            <column name="Adults_Allowed_to_Ride">YES (5 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="majorrides">
+            <column name="id">5</column>
+            <column name="Major_Rides">Loop-O-Plane</column>
+            <column name="Tickets_Needed">3</column>
+            <column name="Minimum_Height_Required">44&quot;</column>
+            <column name="Adults_Allowed_to_Ride">YES (3 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="majorrides">
+            <column name="id">6</column>
+            <column name="Major_Rides">Double Shot</column>
+            <column name="Tickets_Needed">6</column>
+            <column name="Minimum_Height_Required">52&quot;</column>
+            <column name="Adults_Allowed_to_Ride">YES (6 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="majorrides">
+            <column name="id">7</column>
+            <column name="Major_Rides">Tornado</column>
+            <column name="Tickets_Needed">4</column>
+            <column name="Minimum_Height_Required">48&quot; to ride alone 38&quot;-48&quot; w/ adult</column>
+            <column name="Adults_Allowed_to_Ride">YES (4 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="majorrides">
+            <column name="id">8</column>
+            <column name="Major_Rides">Bumper Cars</column>
+            <column name="Tickets_Needed">5</column>
+            <column name="Minimum_Height_Required">50&quot; to ride alone 42&quot;-50&quot; w/ adult</column>
+            <column name="Adults_Allowed_to_Ride">YES (5 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="majorrides">
+            <column name="id">9</column>
+            <column name="Major_Rides">Moby Dick</column>
+            <column name="Tickets_Needed">5</column>
+            <column name="Minimum_Height_Required">48&quot; to ride alone 42&quot;-48&quot; w/ adult</column>
+            <column name="Adults_Allowed_to_Ride">YES (5 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="majorrides">
+            <column name="id">10</column>
+            <column name="Major_Rides">Gravitron</column>
+            <column name="Tickets_Needed">4</column>
+            <column name="Minimum_Height_Required">48&quot;</column>
+            <column name="Adults_Allowed_to_Ride">YES (4 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="majorrides">
+            <column name="id">11</column>
+            <column name="Major_Rides">Tilt-A-Whirl</column>
+            <column name="Tickets_Needed">4</column>
+            <column name="Minimum_Height_Required">46&quot;</column>
+            <column name="Adults_Allowed_to_Ride">YES (4 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="majorrides">
+            <column name="id">12</column>
+            <column name="Major_Rides">Cliffhanger</column>
+            <column name="Tickets_Needed">5</column>
+            <column name="Minimum_Height_Required">46&quot;</column>
+            <column name="Adults_Allowed_to_Ride">YES (5 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="majorrides">
+            <column name="id">13</column>
+            <column name="Major_Rides">Chaos</column>
+            <column name="Tickets_Needed">6</column>
+            <column name="Minimum_Height_Required">48&quot;</column>
+            <column name="Adults_Allowed_to_Ride">YES (6 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="majorrides">
+            <column name="id">14</column>
+            <column name="Major_Rides">Haunted Manor</column>
+            <column name="Tickets_Needed">6</column>
+            <column name="Minimum_Height_Required">Must be at least 7 years old</column>
+            <column name="Adults_Allowed_to_Ride">YES (6 tickets)</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+    </database>
+</pma_xml_export>
