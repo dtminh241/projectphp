@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-@include('layouts.topbot.head.head')
+@include($p)
 ?>
 <body>
 <?php

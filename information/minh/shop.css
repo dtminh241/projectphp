@@ -8,16 +8,23 @@ li img{
 }
 li.post{
     list-style-type: none;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 form.order{
     text-align: right;
-    margin-right: 18%;
-}
+}   
 .price{
     text-align: right;
     margin-right: 10%;
 }
-.post h2{
-    text-align: center;
+
+
+.ticket{
+    padding-top:2%;
+    width:70%;
+}
+.news{
+    padding-top:5%;
+    width:30%;
+    margin-left: 0%;
 }
