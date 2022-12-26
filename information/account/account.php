@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +45,7 @@
         <ul>
         <p><a href="#/!"></a></p>
             <li>
-                <a href="#!Info"><div class="select-box">Account Info</div></a>
+                <a href="#!info"><div class="select-box">Account Info</div></a>
             </li>
             <li>
                 <a href="#!MyOrder"><div class="select-box">My Order</div></a>
@@ -54,10 +56,6 @@
         </ul>
     </div>
     <div ng-view class="menu-content">
-        <h1>Account Info</h1>
-        <p>Name: </p>
-        <p>Email: </p>
-        <p>Phone number: </p>
 
     </div>
 
@@ -67,16 +65,16 @@
         app.config(function($routeProvider) {
             $routeProvider
             .when("/", {
-                templateUrl : "info.htm"
+                templateUrl : "account-info.php"
             })
-            .when("/Info", {
-                templateUrl : "info.htm"
+            .when("/info", {
+                templateUrl : "account-info.php"
             })
             .when("/MyOrder", {
-                templateUrl : "myorder.htm"
+                templateUrl : "account-order.html"
             })
             .when("/ChangePw", {
-                templateUrl : "changepw.htm"
+                templateUrl : "account-changepw.php"
             });
         });
     </script>

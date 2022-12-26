@@ -1,63 +1,17 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="account.css">
     <style>
-        .main{
-            width: 50%;
-            margin: 0 auto;
-        }
-        form{
-            background-color: rgb(142 0 255 / 4%);
-            padding: 5px 25px;
-        }
         form div{
             display: flex;
-        }
-        .gender label{
-            margin-right: 50px;
-        }
-        .form-check{
-            padding-right: 20px;
-        }
-        .form-check label{
-            margin: 0;
-        }
-        .username label{
-            padding-top: 5px;
-            margin-right: 30px;
-        }
-        .birthday label{
-            margin-right: 34px;
-            padding-top: 5px;
-        }
-        .birthday select{
-            margin-left: 10px;
-        }
-        .address label{
-            padding-top: 5px;
-            margin-right: 45px;
-        }
-        .email label{
-            padding-top: 5px;
-            margin-right: 64px;
-        }
-        .password label{
-            padding-top: 5px;
-            margin-right: 35px;
-        }
-        .phone label{
-            padding-top: 5px;
-            margin-right: 55px;
-        }
-        .submit{
-            justify-content: flex-end;
         }
     </style>
 </head>
 <body>
     <div class="main">
         <div class="title">
-            <h2>Thông tin cá nhân</h2>
+            <h2>Account Information</h2>
         </div>
         <div class="info">
             <form action="" method="post">
@@ -92,11 +46,19 @@
                     </select>
                     <select class="form-select" name="month">
                         <option value="0">[Month]</option>
-                        <?php
-                            for ($i=1; $i < 13; $i++) { 
-                                echo '<option value="'.$i.'">Month '.$i.'</option>';
-                            }
-                        ?>
+                        <option value="1">January</option>
+                        <option value="2">Feburary</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    
                     </select>
                     <select class="form-select" name="month">
                         <option value="0">[Year]</option>
