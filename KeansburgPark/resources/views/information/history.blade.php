@@ -30,5 +30,5 @@
 @endsection
 
 @section('js')
-    <script src="{{ asset("js/information/history.js") }}"></script>
+    <script src="{{ asset("js/header.js") }}"></script>
 @endsection

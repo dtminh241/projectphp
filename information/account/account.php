@@ -41,21 +41,23 @@
     </style>
 </head>
 <body class="menu">
-    <div class="menu-box">
-        <ul>
-        <p><a href="#/!"></a></p>
-            <li>
-                <a href="#!info"><div class="select-box">Account Info</div></a>
-            </li>
-            <li>
-                <a href="#!MyOrder"><div class="select-box">My Order</div></a>
-            </li>
-            <li>
-                <a href="#!ChangePw"><div class="select-box">Change Password</div></a>
-            </li>
-        </ul>
+    <div class="menu">
+        <div class="menu-box">
+            <ul>
+            <p><a href="#/!"></a></p>
+                <li>
+                    <a href="#!info"><div class="select-box">Account Info</div></a>
+                </li>
+                <li>
+                    <a href="#!MyOrder"><div class="select-box">My Order</div></a>
+                </li>
+                <li>
+                    <a href="#!ChangePw"><div class="select-box">Change Password</div></a>
+                </li>
+            </ul>
+        </div>
+        <div ng-view class="menu-content">
     </div>
-    <div ng-view class="menu-content">
 
     </div>
 

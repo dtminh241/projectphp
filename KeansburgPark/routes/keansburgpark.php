@@ -1,6 +1,10 @@
 <?php
 use Illuminate\Support\Facades\Route;
 
+Route::get('/counpons',function() {
+    return redirect(asset("image/2019-Keansburg-Coupons.pdf"));
+})->name("counpons");
+
 Route::prefix('/rides-attractions')->group(function() {
     Route::prefix('/runaway-rapids')->group(function() {
         Route::get('/',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showRR'])->name('rides-showRR');
@@ -37,6 +41,20 @@ Route::prefix('/information')->group(function() {
 Route::prefix('/food')->group(function() {
     Route::get('/',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showFood'])->name('food-showfood');
     Route::get('/{href}',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showFoodChil'])->name('food-showfoodchil');
+});
+Route::prefix('/shop')->group(function() {
+    Route::get('/',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showShop'])->name('shop-showshop');
+    Route::any('/add-cart',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showAddCart'])->name('shop-addcart');
+    Route::get('/{href}',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showBuyticket'])->name('shop-showbuyticket');
+    
+});
+
+Route::prefix('/cart')->group(function() {
+    Route::get('/',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showcart'])->name('cart-showcart');
+    Route::get('/edit-cart',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showeditcart'])->name('cart-editcart');
+    Route::get('/delete-cart-{id}',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showdeletecart'])->name('cart-deletecart');
+    Route::get('/pay-cart',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showpaycart'])->name('cart-paycart');
+    Route::get('/cancel-cart',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'showcancelcart'])->name('cart-cancelcart');
 });
 
 Route::get('/{href}',[App\Http\Controllers\KeansburgPark\KeansburgParkController::class,'show'])->name('show');

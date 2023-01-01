@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+}
+.main-heading{
+    background-color: #3d007b;
+    color: white;
+    display: flex;
+    padding-left: 24%;
+    padding-top: 10px;
+    height: 70px;
+}
+.image{
+    margin-right: 50%;
+}
+.image img{
+    width: 100px;
+    height: 50px;
+}
+.user p {
+    margin: 0;
+    
+}
+.main-body-left{
+    width: 25%;
+}
+.main-body{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+}
+.nav-admin ul li{
+    list-style-type: none;
+    border: solid 1px grey;
+    padding: 0 10px;
+    margin: 5px 0;
+}
+.fa-user,
+.fa-lock{
+    margin-right: 14px;
+}
+
+.fa-cart-shopping{
+    margin-right: 9px;
+}
+.fa-caret-down{
+    float: right;
+    margin-top: 5px;
+}
+.user a{
+    text-decoration: none;
+    color: white;
+}
+.user a:hover{
+    color: blue;
+}

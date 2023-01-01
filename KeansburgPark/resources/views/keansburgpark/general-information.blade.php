@@ -396,5 +396,6 @@
 @endsection
 
 @section('js')
+<script src="{{ asset("js/header.js") }}"></script>
 <script src="{{ asset("js/information/generalinformation.js") }}"></script>
 @endsection

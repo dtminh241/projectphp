@@ -80,7 +80,7 @@
                     </ul>
                 </p>
                 <p>Call Meghan Golden at 732-495-1400 ext 3</p>
-                <p>Or email at <a href="http://">Mgolden@keansburgamusementpark.com</a></p>
+                <p>Or email at <a href="mailto:Mgolden@keansburgamusementpark.com">Mgolden@keansburgamusementpark.com</a></p>
                 <p>To book your FUN-raiser TODAY!</p>
             </div>
             <div class="choose-from-right">
@@ -97,5 +97,6 @@
 @endsection
 
 @section('js')
+    <script src="{{ asset("js/header.js") }}"></script>
     <script src="{{ asset("js/information/fundraising.js") }}"></script>
 @endsection

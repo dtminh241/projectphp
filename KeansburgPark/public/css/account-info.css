@@ -1,0 +1,57 @@
+.main-body-right{
+    width: 50%;
+    margin: 0 auto;
+}
+form{
+    background-color: rgb(142 0 255 / 4%);
+    padding: 5px 25px;
+}
+form div{
+    display: flex;
+}
+.gender label{
+    margin-right: 50px;
+}
+.form-check{
+    padding-right: 20px;
+}
+.form-check label{
+    margin: 0;
+}
+.username label{
+    padding-top: 5px;
+    margin-right: 30px;
+}
+.birthday label{
+    margin-right: 34px;
+    padding-top: 5px;
+}
+.birthday select{
+    margin-left: 10px;
+}
+.address label{
+    padding-top: 5px;
+    margin-right: 45px;
+}
+.email label{
+    padding-top: 5px;
+    margin-right: 64px;
+}
+.password label{
+    padding-top: 5px;
+    margin-right: 35px;
+}
+.phone label{
+    padding-top: 5px;
+    margin-right: 55px;
+}
+.submit{
+    justify-content: flex-end;
+}
+.main-body-left a{
+    color: black;
+    text-decoration: none;
+}
+.main-body-left a:hover{
+    color: blue;
+}

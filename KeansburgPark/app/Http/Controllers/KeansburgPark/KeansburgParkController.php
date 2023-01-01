@@ -5,6 +5,8 @@ namespace App\Http\Controllers\KeansburgPark;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Carbon\Carbon;
 
 class KeansburgParkController extends Controller
 {
@@ -144,5 +146,138 @@ class KeansburgParkController extends Controller
             'timekid'=>$dataTimeKid,
             'timemajor'=>$dataTimeMajor
         ]);
+    }
+
+    public function showShop(Request $request)
+    {
+        if ($request->session()->has('token') == false) {
+            return redirect()->route("login-account");
+        }
+        $data = DB::table('ticket')->select('id','thumbnail','href_param')->get();
+        return view("keansburgpark.shop")->with([
+            'title'=>'Shop',
+            'data'=>$data,
+            'count'=>0
+        ]);
+    }
+
+    public function showBuyticket(Request $request,$href)
+    {
+        if ($request->session()->has('token') == false) {
+            return redirect()->route("login-account");
+        }
+        $data = DB::table('ticket')
+                ->where('href_param',$href)
+                ->select('title','discount','id','description','thumbnail','href_param')
+                ->get();
+        $data = $data[0];
+        $dataExits = DB::table('ticket')->where('id','!=',"$data->id")->select('title','thumbnail','href_param')->get();
+        return view("keansburgpark.buy-ticket")->with([
+            'title'=>'Buy',
+            'data'=>$data,
+            'dataExits'=>$dataExits
+        ]);
+    }
+
+    public function showAddCart(Request $request)
+    {
+        if ($request->session()->has('token') == false) {
+            return redirect()->route("login-account");
+        }
+        $token = $request->session()->get('token');
+        $idUser = DB::table('users')->where('token',$token)->select('id')->get();
+        $idOrder = 0;
+        if ($request->session()->has('cart') == false) {
+            $idOrder = DB::table('order')->insertGetId([
+                'user_id'=>$idUser[0]->id,
+                'created_at'=>Carbon::now('Asia/Ho_Chi_Minh'),
+                'updated_at'=>Carbon::now('Asia/Ho_Chi_Minh')
+            ]);
+            $request->session()->put('cart',$idOrder);
+        } else {
+            $idOrder = $request->session()->get('cart');
+        }
+        $price = DB::table('ticket')->where('id',$request->id)->select('discount')->get();
+        $id = $request->id;
+        $quantity = $request->quantity;
+        if ($idOrder != 0) {
+            DB::table('orderdetail')->insert([
+                'order_id'=>$idOrder,
+                'ticket_id'=>$id,
+                'quantity'=>$quantity,
+                'time_order_tiket'=>Carbon::now('Asia/Ho_Chi_Minh'),
+                'total_price'=>$price[0]->discount * $quantity,
+                'created_at'=>Carbon::now('Asia/Ho_Chi_Minh'),
+                'updated_at'=>Carbon::now('Asia/Ho_Chi_Minh')
+            ]);
+            $request->session()->put('success',1);
+        }
+        return redirect()->route('shop-showbuyticket',$request->href);
+    }
+
+    public function showcart(Request $request)
+    {
+        if ($request->session()->has('cart') == true) {
+            $idOrder = $request->session()->get('cart');
+            $data = DB::table('orderdetail')
+                    ->leftJoin('ticket','ticket.id','=','orderdetail.ticket_id')
+                    ->where('orderdetail.order_id',$idOrder)
+                    ->select('orderdetail.id','orderdetail.order_id','orderdetail.quantity','orderdetail.total_price','ticket.title','ticket.discount')
+                    ->get();
+            $totalPrice = DB::table('orderdetail')
+                        ->where('order_id',$idOrder)
+                        ->selectRaw('SUM(total_price) as total')
+                        ->get();
+            DB::table('order')->where('id',$idOrder)->update([
+                'total_price'=>$totalPrice[0]->total,
+                'updated_at'=>Carbon::now('Asia/Ho_Chi_Minh')
+            ]);
+            return view("keansburgpark.cart")->with([
+                'title'=>'Cart',
+                'data'=>$data,
+                'total_price'=>$totalPrice[0]->total,
+                'count'=>0
+            ]);
+        }
+        return view("keansburgpark.cart")->with([
+            'title'=>'Cart',
+            'data'=>'Your cart is currently empty.',
+            'total_price'=>0,
+            'count'=>0
+        ]);
+    }
+
+    public function showeditcart(Request $request)
+    {
+        $id = $request->id;
+        $quantity = $request->quantity;
+        $price = $request->price;
+        DB::table('orderdetail')->where('id',$id)->update([
+            'quantity'=>$quantity,
+            'total_price'=>$quantity * $price
+        ]);
+        return redirect()->route('cart-showcart');        
+    }
+
+    public function showdeletecart(Request $request, $id)
+    {
+        DB::table('orderdetail')->where('id',$id)->delete();
+        return redirect()->route('cart-showcart');
+    }
+
+    public function showcancelcart(Request $request)
+    {
+        if ($request->session()->has('cart') == true) {
+            $cart = $request->session()->get('cart');
+            DB::table('orderdetail')->where('order_id',$cart)->delete();
+            DB::table('order')->where('id',$cart)->delete();
+            $request->session()->forget('cart');
+        }
+        return redirect()->route('shop-showshop');
+    }
+
+    public function showpaycart(Request $request)
+    {
+        # code...
     }
 }

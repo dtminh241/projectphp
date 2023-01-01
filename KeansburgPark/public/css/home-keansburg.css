@@ -1,0 +1,79 @@
+.main-heading{
+    background-image: url(https://keansburgamusementpark.com/wp-content/uploads/revslider/big-main/no1_bg.jpg);
+    height: 500px;
+    width: 100%;
+    text-align: center;
+}
+.main-heading img{
+    width: 845px;
+    height: 415px;
+}
+.info-event{
+    background-color: #3d007b;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+.info-event h3{
+    margin: 0;
+}
+.intro {
+    background-color: rgb(54, 23, 66);
+    color: white;
+    display: flex;
+    padding-top: 30px;
+}
+.intro h4{
+    margin: 0;
+}
+.intro-left{
+    width: 759.5px;
+    height: 213px;
+    text-align: center;
+    padding: 0 15px;
+    padding-top: 35px;
+}
+.intro-right{
+    width: 759.5px;
+    height: 374.4px;
+    padding: 0 15px;
+    padding-top: 35px;
+    text-align: center;
+}
+.title-intro{
+    color: #ff00a8;
+}
+.intro-body-right-inside{
+    display: flex;
+}
+.intro-right-inside-left img{
+    width: 150px;
+    height: 150px;
+}
+.fun-for-day{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.title-fun-for-day{
+    font-family: 'Leckerli One', cursive !important;
+    color: green;
+    text-align: center;
+}
+.fun-for-day-body{
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+}
+.image-fun img{
+    width: 1202.5px;
+}
+.fun-for-day-body a{
+    text-decoration: none;
+    color: #00cfff;
+    font-family: 'Leckerli One', cursive !important;
+}
+.qc img{
+    width: 1512px;
+}

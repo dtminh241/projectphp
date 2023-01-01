@@ -124,3 +124,11 @@ $('.group-nav').onmouseout = function(e){
     //console.log(y) // x 382 625 y 198 564 39 404
     moveTableOut(x,y,'group-nav',890,1096,198,285,39,127)
 }
+
+$('.account-login').onclick = function(){
+    if ($('.account').classList.contains("animation-nav-top")) {
+        $('.account').classList.remove("animation-nav-top");
+    }else {
+        $('.account').classList.add("animation-nav-top");
+    }
+}
