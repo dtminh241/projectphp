@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('css')
-    <link rel="stylesheet" href="{{ asset("css/rapidsattractions/batting-cages.css") }}">
+    <link rel="stylesheet" href="{{ asset('css/rapidsattractions/batting-cages.css') }}">
 @endsection
 
 @section('content')
@@ -20,5 +20,5 @@
 @endsection
 
 @section('js')
-    <script src="{{ asset("js/header.js") }}"></script>
+    <script src="{{ asset('js/header.js') }}"></script>
 @endsection
