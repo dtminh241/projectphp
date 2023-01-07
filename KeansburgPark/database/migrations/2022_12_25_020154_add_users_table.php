@@ -14,8 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users',function (Blueprint $table) {
+            /*
             $table->unsignedBigInteger('permission_id');
+            
             $table->foreign('permission_id')->references('id')->on('permissions');
+            */
         });
     }
 
