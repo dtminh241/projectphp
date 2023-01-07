@@ -19,10 +19,9 @@ return new class extends Migration
             $table->string('title',200);
             $table->string('thumbnail',200);
             $table->longText('note');
-            $table->string('description',400);
+            $table->longText('description');
             $table->string('href_param',300);
             $table->timestamps();
-            $table->longText('save');
             $table->string('link_css',100);
             $table->foreign('category_id')->references('id')->on('category');
         });

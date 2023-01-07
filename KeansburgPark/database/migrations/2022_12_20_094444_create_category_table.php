@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('category', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name',100);
+            $table->string('href_param',200);
         });
     }
 

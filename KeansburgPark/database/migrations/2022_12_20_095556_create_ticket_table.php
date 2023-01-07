@@ -17,10 +17,10 @@ return new class extends Migration
             $table->bigIncrements('id');
             $table->string('title',50);
             $table->string('thumbnail',200);
-            $table->string('type',20);
             $table->string('description',200);
             $table->integer('price');
             $table->integer('discount');
+            $table->string('href_param',200);
             $table->timestamps();
         });
     }

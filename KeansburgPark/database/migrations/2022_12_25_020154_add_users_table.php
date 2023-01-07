@@ -14,11 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users',function (Blueprint $table) {
-            /*
             $table->unsignedBigInteger('permission_id');
-            
+            $table->string('token',350);
+            $table->string('gender',20);
+            $table->string('address',200);
+            $table->string('phone',20);
+            $table->date('birthday');
             $table->foreign('permission_id')->references('id')->on('permissions');
-            */
         });
     }
 
