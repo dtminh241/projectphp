@@ -1,0 +1,126 @@
+footer{
+    color: #fff;
+}
+.footer-body{
+    background-color: #552f7d;
+}
+.main-footer{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.main-footer-heading{
+    display: flex;
+    padding: 50px 0;
+    margin: auto;
+    line-height: 20px;
+}
+.main-footer-heading h2{
+    font-weight: 400;
+    font-size: 24px;
+    padding: 0 25px;
+}
+.main-footer-heading h2:first-child{
+    padding-left: 18%;
+}
+.footer-image-2 img{
+    width: 262.5px;
+    height: 124px;
+}
+.main-footer-body,
+.footer-logo-row-1,
+.footer-logo-row-2{
+    display: flex;
+}
+.main-footer-body{
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+.main-footer-body-left,
+.main-footer-body-right{
+    width: 50%;
+}
+.main-footer-body-left{
+    padding-left: 10%;
+}
+.main-footer-body-right{
+    padding-left: 23%;
+    margin-top: 30px;
+}
+.footer-logo-row-1 img,
+.footer-logo-row-2 img {
+    width: 100px;
+    height: 100px;
+}
+.footer-logo-1,
+.footer-logo-3{
+    margin-right: 20px;
+}
+.footer-intro-end{
+    background-color: black;
+}
+.footer-intro-end a{
+    text-decoration: none;
+}
+.footer-intro-end p{
+    width: 100%;
+    margin: 0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+@media (max-width:800px){
+    footer{
+        color: #fff;
+    }
+    .footer-body{
+        background-color: #552f7d;
+    }
+    .main-footer{
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    .main-footer-heading{
+        display: flex;
+        padding: 30px 0;
+        padding-left:0;
+     
+        line-height: 20px;
+    }
+    .main-footer-heading h2{
+        font-weight: 400;
+        font-size: 24px;
+        padding: 0 25px;
+    }
+    .main-footer-heading h2:first-child{
+        padding-left: 18%;
+    }
+    .footer-image-2 img{
+        width: 262.5px;
+        height: 124px;
+    }
+    .footer-logo-row-1 img,
+    .footer-logo-row-2 img {
+        width: 100%;
+        max-width:100px;
+        height: 100%;
+        max-height: 100px;
+    }
+    .footer-logo-1,
+    .footer-logo-3{
+        margin-right: 0%;
+        text-align: center;
+    }
+    .main-footer-body-left{
+        padding-left: 3%;
+        padding-right:3%;
+        text-align: center;
+    }
+    .main-footer-body-right{
+        padding-left: 3%;
+        padding-right:3%;
+        text-align: center;
+    }
+}

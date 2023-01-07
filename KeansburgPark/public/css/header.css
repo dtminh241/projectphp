@@ -8,26 +8,48 @@ body{
     height: 158px;
 }
 .left-logo{
-    margin-top: 35px;
-    padding-left: 24%;
+    margin-top: 2%;
+    padding-left: 24vw;
+}
+.left-logo .img{
+    max-width: 100%;
+    height: 95px;
+
 }
 .center-logo img{
+    width: 100%;
     height: 158px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5%;
+    margin-right: 20%;
 }
-.top-logo{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.right-logo{
+    margin-left:3%;
+    width:15%;
+}
+.top-logo .img{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 100%;
+    height:50px;
+    max-width: 210px;
+    
+}
+.bot-logo .img{
+    width: 100%;
+    height:50px;
+    max-width: 210px;
 }
 .login{
+    position: absolute;
     color: white;
-    margin-top: 130px;
-    margin-left: 220px;
+    float:right;
+    top:130px;
+    left:85%;
 }
 .login a{
     text-decoration: none;
     color: white;
+    float:right;
     cursor: pointer;
 }
 .login a:hover{
@@ -103,11 +125,11 @@ body{
     background-color: rgb(54, 23, 66);
 }
 .rides-nav{
-    left: 25.4%;
+    left: 25.5%;
     display: none;
 }
 .tickets-nav{
-    left: 38.6%;
+    left: 38.7%;
     display: none;
 }
 .information-nav{
@@ -115,7 +137,7 @@ body{
     display: none;
 }
 .group-nav{
-    left: 58.3%;
+    left: 58.4%;
     display: none;
 }
 .sticky{
@@ -166,5 +188,192 @@ body{
     }
     to{
         right: 0;
+    }
+}
+
+@media (max-width:800px) {
+    body{
+        margin: 0;
+    }
+    .logo{
+        background-color:#3d007b;
+        display: flex;
+        width: 100%;
+        height: 158px;
+    }
+    .left-logo{
+        margin-top: 2%;
+        padding-left: 5vw;
+    }
+    .left-logo .img{
+        max-width: 190px;
+        height: 95px;
+        width:100%;
+    }
+    .center-logo img{
+        width: 100%;
+        max-width:250px;
+        height: 158px;
+        margin-left: 5%;
+        margin-right: 20%;
+    }
+    .right-logo{
+        margin-left:5%;
+        width:25%;
+    }
+    .top-logo .img{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 100%;
+        height:50px;
+        max-width: 250px;
+        
+    }
+    .bot-logo .img{
+      
+        height:50px;
+        max-width: 210px;
+    }
+    .login{
+        position: absolute;
+        color: white;
+        float:right;
+        top:135px;
+        left:80%;
+    }
+    .nav {
+        background-color: rgb(54, 23, 66);
+        color: white;
+        position: relative;
+    }
+    .nav ul{
+        display: flex;
+        margin: 0;
+        padding-left:0%;
+    }
+    .nav ul a{
+        text-decoration: none;
+        color: white;
+    }
+    .nav ul li{
+        list-style-type: none;
+        padding: 7px 8px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .nav ul li:hover{
+        background-color: rgb(198, 44, 165);
+    }
+    .rides-nav,
+    .tickets-nav,
+    .information-nav,
+    .group-nav
+    {   
+        position: absolute;
+        width: 15%;
+        color: white;
+        background-color: rgb(198, 44, 165);
+        top:51px;
+    }
+    .rides-nav ul,
+    .tickets-nav ul,
+    .information-nav ul,
+    .group-nav ul{
+        display: block;
+        margin: 0px;
+        padding: 0;
+    }
+    .rides-nav ul a,
+    .tickets-nav ul a,
+    .information-nav ul a,
+    .group-nav ul a{
+        text-decoration: none;
+        color: white;
+    }
+    .rides-nav ul li,
+    .tickets-nav ul li,
+    .information-nav ul li,
+    .group-nav ul li{
+        list-style-type: none;
+        padding: 10 15px;
+        cursor: pointer;
+    }
+    .rides-nav ul li:hover{
+        background-color: rgb(54, 23, 66);
+    }
+    .tickets-nav ul li:hover{
+        background-color: rgb(54, 23, 66);
+    }
+    .information-nav ul li:hover{
+        background-color: rgb(54, 23, 66);
+    }
+    .group-nav ul li:hover{
+        background-color: rgb(54, 23, 66);
+    }
+    .rides-nav{
+        left: 25.5%;
+        display: none;
+    }
+    .tickets-nav{
+        left: 38.7%;
+        display: none;
+    }
+    .information-nav{
+        left: 49.5%;
+        display: none;
+    }
+    .group-nav{
+        left: 58.4%;
+        display: none;
+    }
+    .sticky{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+    }
+    .account-login{
+        padding-top: 10px;
+    }
+    .account-login img{
+        width: 25px;
+        height: 25px;
+        border-radius: 55%;
+        margin-left: 180px;
+    }
+    .fa-sort-down:hover{
+        transform: rotate(-180deg);
+    }
+    .account{
+        position: absolute;
+        left:90%;
+        cursor: pointer;
+        top:52px;
+        opacity: 0;
+    }
+    .account ul{
+        display: block;
+        background-color: rgb(198, 44, 165);
+        text-align: left;
+        padding: 0;
+    }
+    .account ul li{
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .account ul li:hover{
+        background-color: rgb(54, 23, 66);
+    }
+    .animation-nav-top{
+        opacity: 1;
+        animation: moveTopNav 2s;
+        animation-timing-function:ease-out;
+    }
+    @keyframes moveTopNav{
+        from{
+            right:50px;
+        }
+        to{
+            right: 0;
+        }
     }
 }
