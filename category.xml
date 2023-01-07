@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.0
+- https://www.phpmyadmin.net
+-
+- Máy chủ: 127.0.0.1
+- Thời gian đã tạo: Th1 02, 2023 lúc 05:02 PM
+- Phiên bản máy phục vụ: 10.4.24-MariaDB
+- Phiên bản PHP: 8.1.6
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="keansburgpark" collation="utf8mb4_unicode_ci" charset="utf8mb4">
+            <pma:table name="category">
+                CREATE TABLE `category` (
+                  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                  `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `href_param` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Cơ sở dữ liệu: 'keansburgpark'
+    -->
+    <database name="keansburgpark">
+        <!-- Bảng category -->
+        <table name="category">
+            <column name="id">1</column>
+            <column name="name">Keansburg Amusement Park</column>
+            <column name="href_param">keansburg-amusement-park</column>
+        </table>
+        <table name="category">
+            <column name="id">2</column>
+            <column name="name">Runaway Rapids</column>
+            <column name="href_param">runaway-rapids</column>
+        </table>
+        <table name="category">
+            <column name="id">3</column>
+            <column name="name">Hollowgraves Haunted Manor</column>
+            <column name="href_param">hollowgraves-haunted-manor</column>
+        </table>
+        <table name="category">
+            <column name="id">4</column>
+            <column name="name">Go Karts</column>
+            <column name="href_param">go-karts</column>
+        </table>
+        <table name="category">
+            <column name="id">5</column>
+            <column name="name">Keansburg Games</column>
+            <column name="href_param">keansburg-games</column>
+        </table>
+        <table name="category">
+            <column name="id">6</column>
+            <column name="name">Beach</column>
+            <column name="href_param">beach</column>
+        </table>
+        <table name="category">
+            <column name="id">7</column>
+            <column name="name">Batting Cages</column>
+            <column name="href_param">batting-cages</column>
+        </table>
+        <table name="category">
+            <column name="id">8</column>
+            <column name="name">Arcades</column>
+            <column name="href_param">arcades</column>
+        </table>
+        <table name="category">
+            <column name="id">9</column>
+            <column name="name">Fishing Pier</column>
+            <column name="href_param">fishing-pier</column>
+        </table>
+        <table name="category">
+            <column name="id">10</column>
+            <column name="name">General Information</column>
+            <column name="href_param">general-information</column>
+        </table>
+        <table name="category">
+            <column name="id">11</column>
+            <column name="name">Directions &amp; Parking</column>
+            <column name="href_param">directions-parking</column>
+        </table>
+        <table name="category">
+            <column name="id">12</column>
+            <column name="name">History</column>
+            <column name="href_param">history</column>
+        </table>
+        <table name="category">
+            <column name="id">13</column>
+            <column name="name">News &amp; Press Releases</column>
+            <column name="href_param">news-press-releases</column>
+        </table>
+        <table name="category">
+            <column name="id">14</column>
+            <column name="name">Accommodations</column>
+            <column name="href_param">accommodations</column>
+        </table>
+        <table name="category">
+            <column name="id">15</column>
+            <column name="name">Service Animals</column>
+            <column name="href_param">service-animals</column>
+        </table>
+        <table name="category">
+            <column name="id">16</column>
+            <column name="name">Location Shoots</column>
+            <column name="href_param">location-shoots</column>
+        </table>
+        <table name="category">
+            <column name="id">17</column>
+            <column name="name">Events</column>
+            <column name="href_param">events</column>
+        </table>
+        <table name="category">
+            <column name="id">18</column>
+            <column name="name">Fundraising</column>
+            <column name="href_param">fundraising</column>
+        </table>
+        <table name="category">
+            <column name="id">19</column>
+            <column name="name">Food</column>
+            <column name="href_param">food</column>
+        </table>
+        <table name="category">
+            <column name="id">20</column>
+            <column name="name">Ticket Information</column>
+            <column name="href_param">ticket-information</column>
+        </table>
+        <table name="category">
+            <column name="id">21</column>
+            <column name="name">Ride Height &amp; Ticketing</column>
+            <column name="href_param">ride-height-ticketing</column>
+        </table>
+        <table name="category">
+            <column name="id">22</column>
+            <column name="name">Discounts &amp; Specials</column>
+            <column name="href_param">discounts-specials</column>
+        </table>
+        <table name="category">
+            <column name="id">23</column>
+            <column name="name">Buy Tickets</column>
+            <column name="href_param">buy-tickets</column>
+        </table>
+        <table name="category">
+            <column name="id">24</column>
+            <column name="name">Group Package</column>
+            <column name="href_param">group-package</column>
+        </table>
+        <table name="category">
+            <column name="id">25</column>
+            <column name="name">Birthday Package</column>
+            <column name="href_param">birthday-package</column>
+        </table>
+        <table name="category">
+            <column name="id">26</column>
+            <column name="name">Keansburg Park</column>
+            <column name="href_param">keansburg-park</column>
+        </table>
+        <table name="category">
+            <column name="id">27</column>
+            <column name="name">Account</column>
+            <column name="href_param">account</column>
+        </table>
+        <table name="category">
+            <column name="id">28</column>
+            <column name="name">Privacy Policy</column>
+            <column name="href_param">privacy-policy</column>
+        </table>
+    </database>
+</pma_xml_export>

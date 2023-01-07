@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.0
+- https://www.phpmyadmin.net
+-
+- Máy chủ: 127.0.0.1
+- Thời gian đã tạo: Th1 02, 2023 lúc 03:39 PM
+- Phiên bản máy phục vụ: 10.4.24-MariaDB
+- Phiên bản PHP: 8.1.6
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="keansburgpark" collation="utf8mb4_unicode_ci" charset="utf8mb4">
+            <pma:table name="users">
+                CREATE TABLE `users` (
+                  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                  `name` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `created_at` timestamp NULL DEFAULT NULL,
+                  `updated_at` timestamp NULL DEFAULT NULL,
+                  `permission_id` bigint(20) unsigned NOT NULL,
+                  `token` varchar(350) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  `gender` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  `address` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  `phone` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  `birthday` date DEFAULT NULL,
+                  PRIMARY KEY (`id`),
+                  UNIQUE KEY `users_email_unique` (`email`),
+                  KEY `users_permission_id_foreign` (`permission_id`),
+                  CONSTRAINT `users_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Cơ sở dữ liệu: 'keansburgpark'
+    -->
+    <database name="keansburgpark">
+        <!-- Bảng users -->
+        <table name="users">
+            <column name="id">1</column>
+            <column name="name">hung</column>
+            <column name="email">hung@gmail.com</column>
+            <column name="password">$2y$10$xZMZJReDUg.PbgqMKtx.Mu1at6NVon5ORkSkkQldT/a1Ei3k45VQK</column>
+            <column name="created_at">2022-12-25 01:13:08</column>
+            <column name="updated_at">2022-12-25 01:13:08</column>
+            <column name="permission_id">1</column>
+            <column name="token">abecsgpame$2y$10$xZMZJReDUg.PbgqMKtx.Mu1at6NVon5ORkSkkQldT/a1Ei3k45VQK</column>
+            <column name="gender">NULL</column>
+            <column name="address">NULL</column>
+            <column name="phone">NULL</column>
+            <column name="birthday">NULL</column>
+        </table>
+        <table name="users">
+            <column name="id">3</column>
+            <column name="name">User</column>
+            <column name="email">a@gmail.com</column>
+            <column name="password">$2y$10$9OzxU5KSDu.kNMRNrwCnT.qGyW3J7wLNn3SKcrd4DAQI7YaxeIVji</column>
+            <column name="created_at">2022-12-25 10:40:28</column>
+            <column name="updated_at">NULL</column>
+            <column name="permission_id">2</column>
+            <column name="token">abecsgpame$2y$10$9OzxU5KSDu.kNMRNrwCnT.qGyW3J7wLNn3SKcrd4DAQI7YaxeIVji</column>
+            <column name="gender">male</column>
+            <column name="address">HN</column>
+            <column name="phone">09981321</column>
+            <column name="birthday">1995-04-03</column>
+        </table>
+        <table name="users">
+            <column name="id">6</column>
+            <column name="name">User c</column>
+            <column name="email">c@gmail.com</column>
+            <column name="password">$2y$10$NDa7FfeNwjWWHWDc6bZF8.3CzDdqd8FeG2SHEzJZ6z536AiGfmuLu</column>
+            <column name="created_at">2022-12-25 20:29:48</column>
+            <column name="updated_at">NULL</column>
+            <column name="permission_id">2</column>
+            <column name="token">abecsgpame$2y$10$NDa7FfeNwjWWHWDc6bZF8.3CzDdqd8FeG2SHEzJZ6z536AiGfmuLu</column>
+            <column name="gender">female</column>
+            <column name="address">Hà Nam</column>
+            <column name="phone">012349988</column>
+            <column name="birthday">2007-10-29</column>
+        </table>
+        <table name="users">
+            <column name="id">13</column>
+            <column name="name">d</column>
+            <column name="email">d@gmail.com</column>
+            <column name="password">$2y$10$11G056M1DKR9//1niM9BQOENXp.uAST4TSlRO/et7FWH3MlguHMeO</column>
+            <column name="created_at">2023-01-02 10:48:34</column>
+            <column name="updated_at">NULL</column>
+            <column name="permission_id">2</column>
+            <column name="token">NULL</column>
+            <column name="gender">NULL</column>
+            <column name="address">NULL</column>
+            <column name="phone">NULL</column>
+            <column name="birthday">NULL</column>
+        </table>
+    </database>
+</pma_xml_export>

@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.0
+- https://www.phpmyadmin.net
+-
+- Máy chủ: 127.0.0.1
+- Thời gian đã tạo: Th1 02, 2023 lúc 03:37 PM
+- Phiên bản máy phục vụ: 10.4.24-MariaDB
+- Phiên bản PHP: 8.1.6
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="keansburgpark" collation="utf8mb4_unicode_ci" charset="utf8mb4">
+            <pma:table name="menu">
+                CREATE TABLE `menu` (
+                  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                  `category_id` bigint(20) unsigned NOT NULL,
+                  `title` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `thumbnail` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `note` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `description` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `href_param` varchar(300) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `created_at` timestamp NULL DEFAULT NULL,
+                  `updated_at` timestamp NULL DEFAULT NULL,
+                  `link_css` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  PRIMARY KEY (`id`),
+                  KEY `menu_category_id_foreign` (`category_id`),
+                  CONSTRAINT `menu_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=73 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Cơ sở dữ liệu: 'keansburgpark'
+    -->
+    <database name="keansburgpark">
+        <!-- Bảng menu -->
+        <table name="menu">
+            <column name="id">1</column>
+            <column name="category_id">13</column>
+            <column name="title">At New Jersey amusement park, vintage ride turns 80</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2017/04/usa-today-kap-3.jpg</column>
+            <column name="note">This article originally appeared on USA Today KEANSBURG, N.J. — One milestone birthday to celebrate as Keansburg Amusement Park opens in full this weekend: Its kiddie “pedal” cars turn 80. The seven vintage cars, painted yellow and green, have been carrying children around and around since the 1930s. “It’s one of a kind, really,” marketing director Katie […]</column>
+            <column name="description">&lt;h1&gt;At New Jersey amusement park, vintage ride turns 80&lt;/h1&gt;
+            &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2017/04/usa-today-kap-3.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;span class=&quot;small&quot;&gt;
+                &lt;p&gt;This article originally appeared on&lt;/p&gt;
+                &lt;a href=&quot;https://www.usatoday.com/story/travel/nation-now/2017/04/09/keansburg-amusement-park-vintage-ride/100233186/&quot;
+                    target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;USA today&lt;/a&gt;
+            &lt;/span&gt;
+            &lt;br&gt;
+            &lt;p&gt;&lt;b&gt;KEANSBURG, N.J.&lt;/b&gt; — One milestone birthday to celebrate as Keansburg Amusement Park opens in full
+                this weekend: Its kiddie “pedal” cars turn 80.&lt;/p&gt;
+            &lt;p&gt;The seven vintage cars, painted yellow and green, have been carrying children around and around since the
+                1930s.&lt;/p&gt;
+            &lt;p&gt;“It’s one of a kind, really,” marketing director Katie Johnson said. “They used to have pedals inside and
+                you would ride them on the street. Someone created a ride out of it.”&lt;/p&gt;
+            &lt;p&gt;The ride is the oldest in the park, which was founded in 1904.&lt;/p&gt;
+            &lt;div class=&quot;main-body-inside&quot;&gt;
+                &lt;div class=&quot;main-body-left&quot;&gt;
+                    &lt;p&gt;“It’s essentially been the same for 80 years,” Johnson said. “Their bodies are steel, which these
+                        days is unheard of. At one point they had little whistles and horns.”&lt;/p&gt;
+                    &lt;p&gt;The cars took a beating at the hands of superstorm Sandy in 2012. Seven of the eight survived.
+                    &lt;/p&gt;
+                    &lt;p&gt;The eighth was “flat as a pancake,” Johnson said.&lt;/p&gt;
+                    &lt;p&gt;“We actually still have it,” she said. “The rest we sent to a shop in Middletown. They
+                        hand-hammered out each car and painted them.”&lt;/p&gt;
+                    &lt;p&gt;Keansburg Amusement Park is known for its historic features, in a place built up from marshland
+                        in a time when no one gave a second thought to draining the swamps.&lt;/p&gt;
+                    &lt;p&gt;The kids’ airplane ride also dates back to the 1930s. But the pedal cars stand out because of
+                        their unmistakably classic design.&lt;/p&gt;
+                    &lt;p&gt;“One of the wonderful things about that particular ride and other historical rides — we get a lot
+                        of grandparents and great aunts and uncles, generations of people who have been on that ride,”
+                        Johnson said. “They’ll say, ‘I rode that ride in the &#039;40s.’ It’s wonderful when we get people
+                        who marvel at that fact and it brings back memories of them riding it.”&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;main-body-right&quot;&gt;
+                    &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2017/04/usa-today-kap-1.jpg&quot; alt=&quot;&quot;&gt;
+                    &lt;p&gt;A boy rides the vintage kiddie pedal cars at the Keansburg Amusement Park. The ride turns 80 in
+                        the 2017 season. &lt;span&gt;(Photo: Keansburg (N.J.) Amusement Park)&lt;/span&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</column>
+            <column name="href_param">at-new-jersey-amusement-park-vintage-ride-turns-80</column>
+            <column name="created_at">2017-04-09 15:40:03</column>
+            <column name="updated_at">2017-04-09 15:40:03</column>
+            <column name="link_css">css-news</column>
+        </table>
+        <table name="menu">
+            <column name="id">2</column>
+            <column name="category_id">13</column>
+            <column name="title">Keansburg Amusement Parks Opens for Season Saturday</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2017/04/thepatch-0403.jpg</column>
+            <column name="note">This article originally appeared on Patch.com By Carly Baldwin, (Patch Staff) KEANSBURG, N.J. — Keansburg Amusement Park will officially open for the season Palm Sunday weekend, April 8 and 9, the park has confirmed. The amusement park will be open all spring break at 12 noon through Monday, April 17 (weather permitting). And the mermaids will […]</column>
+            <column name="description">&lt;h1&gt;Keansburg Amusement Parks Opens for Season Saturday&lt;/h1&gt;
+            &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2017/04/thepatch-0403.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;span class=&quot;small&quot;&gt;
+                &lt;p&gt;This article originally appeared on&lt;/p&gt;
+                &lt;a href=&quot;https://patch.com/new-jersey/middletown-nj/keansburg-amusement-parks-opens-season-april-8&quot;
+                    target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Patch.com&lt;/a&gt;
+            &lt;/span&gt;
+            &lt;p&gt;By &lt;a href=&quot;https://patch.com/users/carly-baldwin-0&quot;&gt;Carly Baldwin, (Patch Staff)&lt;/a&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;b&gt;KEANSBURG, N.J.&lt;/b&gt; — Keansburg Amusement Park will officially open for the season Palm Sunday weekend, April 8 and 9, the park has confirmed. The amusement park will be open all spring break at 12 noon through Monday, April 17 (weather permitting). And the mermaids will be back this summer: Beginning Monday, June 26th Runaway Rapids will have live Mermaids swimming with guests every Monday during the 2017 season.&lt;/p&gt;
+            &lt;p&gt;And as &lt;a href=&quot;https://patch.com/new-jersey/middletown-nj/keansburg-amusement-park-s-easter-egg-hunt-will-be-april-9&quot; style=&quot;font-size:16px;&quot;&gt;we already told you&lt;/a&gt;, Keansburg Amusement Park will also hold its annual Easter egg hunt on Sunday, April 9 this year, beginning at 1 p.m., rain or shine.&lt;/p&gt;</column>
+            <column name="href_param">keansburg-amusement-parks-opens-for-season-saturday</column>
+            <column name="created_at">2017-04-03 15:40:49</column>
+            <column name="updated_at">2017-04-03 15:40:49</column>
+            <column name="link_css">css-news</column>
+        </table>
+        <table name="menu">
+            <column name="id">3</column>
+            <column name="category_id">13</column>
+            <column name="title">Iconic Restaurant Finally Reopens After Sandy</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/09/olde-heidelberg-5.jpg</column>
+            <column name="note">This article originally appeared on Asbury Park Press Three years ago this fall, a now infamous storm came calling. It blew across our beaches, ripped apart our hometowns and then retreated, taking with it much of what we love about life at the Shore. Earlier this month, we got a piece of that old life […]</column>
+            <column name="description">&lt;h1&gt;Iconic Restaurant Finally Reopens After Sandy&lt;/h1&gt;
+                &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2015/09/olde-heidelberg-5.jpg&quot; alt=&quot;&quot;&gt;
+                &lt;span class=&quot;small&quot;&gt;
+                    &lt;p&gt;This article originally appeared on&lt;/p&gt;
+                    &lt;a href=&quot;https://www.app.com/story/entertainment/dining/2015/08/26/old-heidelberg-inn-reopens/32404121/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Asbury Park Press&lt;/a&gt;
+                &lt;/span&gt;
+                &lt;p&gt;Three years ago this fall, a now infamous storm came calling.&lt;/p&gt;
+                &lt;p&gt;It blew across our beaches, ripped apart our hometowns and then retreated, taking with it much of what we love about life at the Shore.&lt;/p&gt;
+                &lt;p&gt;Earlier this month, we got a piece of that old life back.&lt;/p&gt;
+                &lt;div class=&quot;image-note&quot;&gt;
+                    &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2015/09/olde-heidelberg-1.jpg&quot; alt=&quot;&quot;&gt;
+                    &lt;p&gt;Allison Gehlhaus and her husband, Hank, hold a photo of Old Heidelberg Inn, a hot dog spot that opened in the 1930s and was destroyed by superstorm Sandy in 2012. Hank and his brother, Bill, reopened the famed hot dog spot at Keansburg Amusement Park earlier this month. THOMAS P. COSTELLO/STAFF PHOTOGRAPHER &lt;span&gt;(Photo: THOMAS P. COSTELLO/STAFF PHOTOGRAPHER)&lt;/span&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;p&gt;Brothers Hank and Bill Gehlhaus, who own the superstorm Sandy-ravaged Keansburg Amusement Park, reopened Olde Heidelberg Aug. 8. The park’s iconic hot dog restaurant, which dates back to the 1930s, had been flooded and destroyed.&lt;/p&gt;
+                &lt;p&gt;“When people come in, their jaws drop open,” said Hank Gehlhaus, who is 58 and has “worked here my whole life. They say, ‘It’s the Heidelberg, but even more beautiful than I remember it.’”&lt;/p&gt;
+                &lt;p&gt;&lt;b&gt;A long way back&lt;/b&gt;&lt;/p&gt;
+                &lt;p&gt;The Heidelberg, as Gehlhaus calls it, opened in 1934, when hot dogs could be purchased for a nickel. The brothers, whose family owned the amusement park from 1904 through the ’70s and who bought the park back in 1995, took over the operation of Olde Heidelberg following the storm.&lt;/p&gt;
+                &lt;p&gt;“The Heidelberg was right at ground zero of the damage,” said Hank Gehlhaus, who lives in Rumson. His brother, Bill, is 62 and lives in Atlantic Highlands. “There was more of the water here than anywhere else; it took a direct hit.&lt;/p&gt;
+                &lt;div class=&quot;image-note&quot;&gt;
+                    &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2015/09/olde-heidelberg-2.jpg&quot; alt=&quot;&quot;&gt;
+                    &lt;p&gt;Old Heidelberg Inn, destroyed by superstorm Sandy, brings famous griddle dogs back to Keansburg. &lt;span&gt;(Photo: THOMAS P. COSTELLO/STAFF PHOTOGRAPHER)&lt;/span&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;p&gt;“When we got to it, the only thing we could save were the original tables, beautiful wooden tables with marble tops,” he said. “Everything else was ruined in the storm; we had to come in and redo everything.”&lt;/p&gt;
+                &lt;p&gt;The restoration took a year, but the pride in Gehlhaus’ voice when he talks about the Heidleberg makes it clear: Their hard work was worth it.&lt;/p&gt;
+                &lt;p&gt;“This is such a key part of the amusement park, a key part of the Bayshore,” he said. “We realized it was such an icon, and that this deserves a special bit of attention. We said let’s take our time, let’s make the place look like a palace.&lt;/p&gt;
+                &lt;p&gt;“Everything is brand new and meticulously installed to mirror the original Heidelberg,” Gehlhaus said. “I want it to last. I want this place to be timeless. I want my kids to come here, want their kids to come here. I want to make this for the ages.”&lt;/p&gt;
+                &lt;div class=&quot;main-inside&quot;&gt;
+                    &lt;div class=&quot;main-body-left&quot;&gt;
+                        &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2015/09/olde-heidelberg-3.jpg&quot; alt=&quot;&quot;&gt;
+                        &lt;p&gt;Allison Gehlhaus serves up a hot dog from the griddle at the reopened Olde Heidelberg in Keansburg. &lt;span&gt;(Photo: THOMAS P. COSTELLO/STAFF PHOTOGRAPHER)&lt;/span&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;main-body-right&quot;&gt;
+                        &lt;p&gt;&lt;b&gt;Take a bite&lt;/b&gt;&lt;/p&gt;
+                        &lt;p&gt;The Heidelberg was famous for its griddle franks and draft beer, “that was its claim to fame through the generations,” Gehlhaus said.&lt;/p&gt;
+                        &lt;p&gt;When it came time to rebuild, he was determined to keep it that way.&lt;/p&gt;
+                        &lt;p&gt;“We had to search for months to find just the right blend of pork and beef and just the right amount of crunch,” Gehlhaus said, adding that he tastes a hot dog every day to make sure the flavor is consistent.&lt;/p&gt;
+                        &lt;div class=&quot;main-body-inside&quot;&gt;
+                            &lt;p&gt;You can have your Heidelberg dog topped with sweet or hot relish, spicy mustard, sauerkraut, homemade chili or caramelized onions, which Gehlhaus’ wife, Allison, cooks all morning in a mix of wine and sugar. A hot dog costs $2.95; the relishes, sauerkraut and condiments are complimentary and the addition of onions or chili costs 50 cents.&lt;/p&gt;
+                            &lt;p&gt;And don’t forget a cold beer from the full bar to wash it all down.&lt;/p&gt;
+                            &lt;p&gt;“People are so happy. Everybody has a smile on their face, the kids are&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;main-body-end&quot;&gt;
+                    &lt;div class=&quot;main-body-end-left&quot;&gt;
+                        &lt;p&gt;drinking root beer and birch beer,” Gehlhaus said. “People are coming in and they are being wheeled in by their children, they are in their 70s, their 80s, their 90s and they’re coming in to relive the Heidleberg experience from when they were a child.&lt;/p&gt;
+                        &lt;p&gt;“It’s been so gratifying,” he said. “It’s so nice to bring something back that people thought was gone forever.”&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;main-body-end-right&quot;&gt;
+                        &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2015/09/olde-heidelberg-4.jpg&quot; alt=&quot;&quot;&gt;
+                        &lt;p&gt;The Olde Heidelberg is known for its griddled hot dogs, which come with sweet or hot relish, spicy mustard, sauerkraut, homemade chili or caramelized onions. &lt;span&gt;(Photo: THOMAS P. COSTELLO/STAFF PHOTOGRAPHER)&lt;/span&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;</column>
+            <column name="href_param">iconic-restaurant-finally-reopens-after-sandy</column>
+            <column name="created_at">2015-09-03 15:41:36</column>
+            <column name="updated_at">2015-09-03 15:41:36</column>
+            <column name="link_css">css-news-3</column>
+        </table>
+        <table name="menu">
+            <column name="id">4</column>
+            <column name="category_id">13</column>
+            <column name="title">All You Need to Know About Summer at the Shore</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/06/cliffhangar-app.jpg</column>
+            <column name="note">This article originally appeared on Asbury Park Press Boardwalk &amp; Dining Time for lunch: If you&#039;re looking for something a little different, head to Shish Kabob Gourmet for shish kabobs and corn on the cob, both of which are grilled to order. There&#039;s also Cheesy&#039;s Pizza and Dylan&#039;s Walk-in Tacos and Hot Dogs; at the […]</column>
+            <column name="description">&lt;h1&gt;All You Need to Know About Summer at the Shore&lt;/h1&gt;
+            &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2015/06/cliffhangar-app.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;span class=&quot;small&quot;&gt;
+                &lt;p&gt;This article originally appeared on&lt;/p&gt;
+                &lt;a href=&quot;https://www.app.com/errors/404/&quot;
+                    target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Asbury Park Press&lt;/a&gt;
+            &lt;/span&gt;
+            &lt;h2&gt;Boardwalk &amp; Dining&lt;/h2&gt;
+            &lt;p&gt;Time for lunch: If you&#039;re looking for something a little different, head to Shish Kabob Gourmet for shish kabobs and corn on the cob, both of which are grilled to order. There&#039;s also Cheesy&#039;s Pizza and Dylan&#039;s Walk-in Tacos and Hot Dogs; at the latter, enjoy a side of Fritos or Doritos mixed with taco seasonings.&lt;/p&gt;
+            &lt;div class=&quot;image-note&quot;&gt;
+                &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2015/06/olde-heidelberg-inn.jpg&quot; alt=&quot;&quot;&gt;
+                &lt;p&gt;The Olde Heidelberg Inn, shown here in its heydey, is a 1930s hot dog joint that returns to the Keansburg boardwalk this summer. &lt;span&gt;(Photo: COURTESY OF KEANSBURG AMUSEMENT PARK)&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;p&gt;Need a snack?: Get to Glenda&#039;s Great Fries for a boardwalk classic — hand-cut french fries served with vinegar.&lt;/p&gt;
+            &lt;p&gt;&lt;b&gt;Dinner date&lt;/b&gt;: At Miami Club, a sit-down spot, choose between a raw bar, homemade clam chowder, seafood or burgers — or try it all. There&#039;s also The Boardwalk Grill, serving up pulled pork, hamburgers, hot dogs and fries; Barb&#039;s Burritos, which offers traditional Mexican fare, and the newly renovated Olde Heidelberg Inn, a well-known hot dog joint that dates back to the 1930s and is coming back this year after being destroyed by superstorm Sandy.&lt;/p&gt;
+            &lt;h2&gt;Keeping cool in Keansburg&lt;/h2&gt;
+            &lt;p&gt;&lt;b&gt;KEANSBURG AMUSEMENT PARK&lt;/b&gt;: On Beachway Avenue adjacent to the Keansburg boardwalk. The amusement park includes bumper cars, kiddie rides, adolescent and adult rides, including roller coaster and scare house. The park is currently open daily with limited attractions at noon on weekdays, 11 a.m. on weekends. The full park will be running by late June. Park gates will open at 10 a.m., and the park is open until about 11 p.m. on weekdays, later on weekends. Food options include classic boardwalk fare and seafood. Alcohol is not permitted inside the parks. Fully restored Old Heidelberg Inn, destroyed by Sandy, will open during the summer. The park will have limited openings, weather permitting, through mid-October. For up-to-date information, check the park&#039;s website.&lt;/p&gt;
+            &lt;div class=&quot;image-note&quot;&gt;
+                &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2015/06/runaway-rapids-post.jpg&quot; alt=&quot;&quot;&gt;
+                &lt;p&gt;Runaway Rapids water park in Keansburg is the perfect place to take a break from the heat of the beach. &lt;span&gt;(Photo: FILE PHOTO)&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;p&gt;&lt;b&gt;RUNAWAY RAPIDS WATER PARK&lt;/b&gt;: The amusement park&#039;s companion is open from 10 a.m. to dusk, weather permitting. The park will be open on weekends starting Memorial Day weekend at 11 a.m. and will be open daily at 10 a.m. in early June. The water park&#039;s season ends the weekend after Labor Day.&lt;/p&gt;
+            &lt;p&gt;&lt;b&gt;INFORMATION&lt;/b&gt;: Beach, 732-787-0215; amusement parks, 732-495-1400.&lt;/p&gt;
+            &lt;h2&gt;Boardwalk Rides&lt;/h2&gt;
+            &lt;p&gt;The Bayshore&#039;s version of boardwalk excitement is centered in Keansburg. The venerable Keansburg Amusement Park celebrates its 111th anniversary this year, and is celebrating the occasion on Sept. 1, with $1.11 specials and other promotions.&lt;/p&gt;
+            &lt;div class=&quot;image-note&quot;&gt;
+                &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2015/06/cliffhangar-app.jpg&quot; alt=&quot;&quot;&gt;
+                &lt;p&gt;The Cliff Hanger at Keansburg will make you feel like you can fly. &lt;span&gt;(Photo: Courtesy of Keansburg Amusement Park)&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;p&gt;This summer, Keansburg Amusement Park introduces its new rollercoaster, Looping Star, which replaces the Wild Cat coaster that was destroyed by Sandy in October 2012. The Italian-made Pinfari ZL42 rollercoaster has one loop, offering turns, drops and over-the-edge twists.&lt;/p&gt;
+            &lt;p&gt;Other thrill rides at Keansburg include the Cliff Hanger, which will make you feel like you can fly.&lt;/p&gt;</column>
+            <column name="href_param">all-you-need-to-know-about-summer-at-the-shore</column>
+            <column name="created_at">2015-06-23 15:42:09</column>
+            <column name="updated_at">2015-06-23 15:42:09</column>
+            <column name="link_css">css-news</column>
+        </table>
+        <table name="menu">
+            <column name="id">5</column>
+            <column name="category_id">13</column>
+            <column name="title">Pizza V Voted #2 by APP.com Summer Food Series</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/06/pizza-v.jpg</column>
+            <column name="note">This article originally appeared on Asbury Park Press WHY VISIT: &quot;We have people that come from Florida to get the pizza because they grew up here and love our pizza,&quot; said James Carusotto, whose father, Anthony, owns Pizza V. The pizzeria has been on the boardwalk for nearly 50 years. &quot;I was making pizza (on […]</column>
+            <column name="description">&lt;h1&gt;Pizza V Voted #2 by APP.com Summer Food Series&lt;/h1&gt;
+            &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2015/06/pizza-v.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;span class=&quot;small&quot;&gt;
+                &lt;p&gt;This article originally appeared on&lt;/p&gt;
+                &lt;a href=&quot;https://patch.com/new-jersey/middletown-nj/keansburg-amusement-parks-opens-season-april-8&quot;
+                    target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Asbury Park Press&lt;/a&gt;
+            &lt;/span&gt;
+            &lt;div class=&quot;image&quot;&gt;
+                &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2015/06/pizza-v.jpg&quot; alt=&quot;&quot;&gt;
+                &lt;p&gt;(Photo: COURTESY OF CARLY VENA)&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;h2&gt;WHY VISIT:&lt;/h2&gt;
+            &lt;p&gt;&quot;We have people that come from Florida to get the pizza because they grew up here and love our pizza,&quot; said James Carusotto, whose father, Anthony, owns Pizza V. The pizzeria has been on the boardwalk for nearly 50 years. &quot;I was making pizza (on a recent Sunday), two ladies came up and said &#039;I came from Newark for this pizza.&#039; And then last year, a customer told me he comes from Lodi just for our pizza. Lodi borders New York, it is probably a little over an hour away. Then he goes home.&quot;&lt;/p&gt;
+            &lt;h2&gt;THE PIZZA:&lt;/h2&gt;
+            &lt;p&gt;If you are a pizza purist, Pizza V on the boardwalk is the place for you. They keep things simple: &quot;We only make plain pizza,&quot; Carusotto said, &quot;but if someone brings pepperoni, etc., we will put it on the pizza.&quot; Their tomato sauce is homemade, and their pies are topped with mozzarella cheese.&lt;/p&gt;
+            &lt;h2&gt;WHERE:&lt;/h2&gt;
+            &lt;p&gt;Pizza V is at 275 Beachway Ave. on the Keansburg boardwalk; call 732-495-1292&lt;/p&gt;
+            &lt;p&gt;Click &lt;a href=&quot;https://www.app.com/story/entertainment/dining/2015/06/09/boardwalk-pizza/28746465/&quot;&gt;here&lt;/a&gt; to read the entire article.&lt;/p&gt;</column>
+            <column name="href_param">pizza-v-voted-2-by-app-com-summer-food-series</column>
+            <column name="created_at">2015-06-23 15:42:09</column>
+            <column name="updated_at">2015-06-23 15:42:09</column>
+            <column name="link_css">css-news-5</column>
+        </table>
+        <table name="menu">
+            <column name="id">6</column>
+            <column name="category_id">13</column>
+            <column name="title">Keansburg Amusement Park ready to open</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/RockinTug.jpg</column>
+            <column name="note">This article originally appeared on NJ.com KEANSBURG - The Keansburg Amusement Park is set to open this weekend for the 2015 season. Several new attractions and rides have been restored. Park owner William Gelhaus says it&#039;s a great place to celebrate the nicer weather. &quot;We&#039;re expecting great things. This is the first weekend after a […]</column>
+            <column name="description">&lt;h1&gt;Keansburg Amusement Park ready to open&lt;/h1&gt;
+            &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2015/03/RockinTug.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;span class=&quot;small&quot;&gt;
+                &lt;p&gt;This article originally appeared on &lt;a href=&quot;https://patch.com/new-jersey/middletown-nj/keansburg-amusement-parks-opens-season-april-8&quot;
+                    target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;NJ.com&lt;/a&gt;&lt;/p&gt;
+            &lt;/span&gt;
+            &lt;p&gt;KEANSBURG - The Keansburg Amusement Park is set to open this weekend for the 2015 season.&lt;/p&gt;
+            &lt;p&gt;Several new attractions and rides have been restored. Park owner William Gelhaus says it&#039;s a great place to celebrate the nicer weather.&lt;/p&gt;
+            &lt;p&gt;&quot;We&#039;re expecting great things. This is the first weekend after a miserable winter and everyone is trying to get out. So we&#039;re expecting one of our biggest days of the year,&quot; says Gelhaus.&lt;/p&gt;
+            &lt;p&gt;Owners say they expect a new looping coaster to be one of this season&#039;s biggest attractions. Visitors of the park will have to wait until the ride is properly inspected, however.&lt;/p&gt;</column>
+            <column name="href_param">keansburg-amusement-park-ready-to-open</column>
+            <column name="created_at">2015-05-08 15:43:15</column>
+            <column name="updated_at">2015-05-08 15:43:15</column>
+            <column name="link_css">css-news</column>
+        </table>
+        <table name="menu">
+            <column name="id">7</column>
+            <column name="category_id">13</column>
+            <column name="title">Jerry’s Jobs: Working at Keansburg Amusement Park</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/jerrys-jobs.jpg</column>
+            <column name="note">This article originally appeared on Asbury Park Press. KEANSBURG – My hand is hovering over the button. I am waiting for the signal, a thumbs up, from my colleague in the lookout tower. I&#039;m about to send two teenage girls hurtling 10 stories skyward at a speed of 35 miles an hour. This is the […]</column>
+            <column name="description">&lt;h1&gt;Jerry’s Jobs: Working at Keansburg Amusement Park&lt;/h1&gt;
+            &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2015/04/jerrys-jobs.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;span class=&quot;small&quot;&gt;
+                &lt;p&gt;This article originally appeared on &lt;a href=&quot;https://www.app.com/story/news/local/monmouth-county-bayshore/keansburg/2015/04/20/keansburg-amusement-park-jerrys-jobs/26051613/&quot;
+                    target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Asbury Park Press.&lt;/a&gt;&lt;/p&gt;
+            &lt;/span&gt;
+            &lt;p&gt;KEANSBURG – My hand is hovering over the button. I am waiting for the signal, a thumbs up, from my colleague in the lookout tower.&lt;/p&gt;
+            &lt;p&gt;I&#039;m about to send two teenage girls hurtling 10 stories skyward at a speed of 35 miles an hour.&lt;/p&gt;
+            &lt;p&gt;This is the closest I&#039;ll ever come to launching a rocket ship....&lt;/p&gt;</column>
+            <column name="href_param">jerry-s-jobs-working-at-keansburg-amusement-park</column>
+            <column name="created_at">2015-04-20 15:43:36</column>
+            <column name="updated_at">2015-04-20 15:43:36</column>
+            <column name="link_css">css-news</column>
+        </table>
+        <table name="menu">
+            <column name="id">8</column>
+            <column name="category_id">13</column>
+            <column name="title">Founded in 1904, Keansburg Amusement Park still charms</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/catepillar-ride.jpg</column>
+            <column name="note">This article originally appeared on Asbury Park Press In 1904, William Gehlhaus convinced five investors to join him in purchasing an area of marshland overlooking Raritan Bay, in hopes of creating a resort area. It was a bold move, especially because Gehlhaus was a baker from Atlantic Highlands, with no experience in real estate development. […]</column>
+            <column name="description">&lt;h1&gt;Founded in 1904, Keansburg Amusement Park still charms&lt;/h1&gt;
+            &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2015/04/catepillar-ride.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;span class=&quot;small&quot;&gt;
+                &lt;p&gt;This article originally appeared on &lt;/p&gt;
+                &lt;a href=&quot;https://cm.app.com/offers-reg/?return=https%3A%2F%2Fwww.app.com%2Fstory%2Fentertainment%2Fevents%2F2014%2F08%2F20%2Ffounded-keansburg-amusement-park-still-charms%2F14343591%2F&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Asbury Park Press&lt;/a&gt;
+            &lt;/span&gt;
+            &lt;p&gt;In 1904, William Gehlhaus convinced five investors to join him in purchasing an area of marshland overlooking Raritan Bay, in hopes of creating a resort area.&lt;/p&gt;
+            &lt;p&gt;It was a bold move, especially because Gehlhaus was a baker from Atlantic Highlands, with no experience in real estate development.&lt;/p&gt;
+            &lt;p&gt;Nevertheless, Gehlhaus and his partners founded the New Point Comfort Beach Company and set about filling in the marsh with sand from the bay. The company quickly went beyond plans for a boardwalk and vacation bungalows, adding a water company and two banks.&lt;/p&gt;
+            &lt;p&gt;In 1909, Gehlhaus founded the Keansburg Steamboat Company to bring visitors across the bay from New York City. He built a dance hall and the New Point Hotel and added amusements, including a Ferris wheel.&lt;/p&gt;
+            &lt;p&gt;The earliest rides are gone, and the wooden boardwalk was replaced with a paved walkway after a hurricane in 1944. The steamboat ferries stopped running after another hurricane destroyed the pier in 1960. But Keansburg Amusement Park still operates some of the same kiddie rides it debuted in the 1920s and &#039;30s, painstakingly restored and maintained, with many others dating from the 1960s.&lt;/p&gt;
+            &lt;p&gt;&quot;It&#039;s no secret that grandparents come here every day to show their grandchildren what rides they rode when they were kids,&quot; said Hank Gehlhaus, grandson of founder William. &quot;It&#039;s very, very important to us that that legacy continues.&quot;&lt;/p&gt;
+            &lt;p&gt;The borough of Keansburg, which was incorporated in 1917, basically grew up around William Gehlhaus&#039; vision of summertime fun. And 110 years later, Keansburg, &quot;the gem of the Bayshore,&quot; is still best known for its namesake amusement park.&lt;/p&gt;
+            &lt;p&gt;&quot;The kids are having a good time, and it&#039;s close to home,&#039;&#039; said Josephine Prestia of Matawan on a recent crystalline afternoon at the park. &quot;It&#039;s great when you have some last-minute free time, because we can get here fast and have fun.&#039;&#039;&lt;/p&gt;
+            &lt;p&gt;Prestia brought her children, Gabriella, 9, and Robert, 7, to the kiddie rides, where they enjoyed the Super Slide and the Happy Swing. Robert wore a sign around his neck that read, &quot;I won my goldfish tank today,&quot; referring to the prize he won at one of Keansburg&#039;s games of chance.&lt;/p&gt;
+            &lt;p&gt;&quot;They&#039;ll hold the fish for him until we&#039;re done with the rides, and that&#039;s like his receipt,&quot; Prestia said. &quot;It&#039;s so cute – they do a lot of nice things like that here.&quot;&lt;/p&gt;
+            &lt;p&gt;On Aug. 28, Keansburg Amusement Park will celebrate its 110th anniversary with price specials of $1.10 on certain concession foods, games and other attractions. There also will be a pancake-eating contest, sponsored by IHOP.&lt;/p&gt;
+            &lt;p&gt;&quot;My grandfather really filled in a good part of Keansburg,&quot; said Hank Gehlhaus, who now owns the park with his brother, also named William. &quot;It was all marshland. He created half the town.&quot;&lt;/p&gt;
+            &lt;p&gt;Hank Gehlhaus has been running Keansburg Amusement Park with William and their respective families for 20 years.&lt;/p&gt;
+            &lt;p&gt;Their father, Henry Gehlhaus, had sold the family business in 1972, due to health concerns that turned out to be premature.&lt;/p&gt;
+            &lt;p&gt;Hank kept a foot in the door, so to speak, by running concession stands at the park. When he saw his chance to re-claim the park, he jumped at it.&lt;/p&gt;
+            &lt;p&gt;&quot;We were heartbroken when my dad sold it,&quot; Hank said. &quot;I was only 12 and William was 16. But my dad thought he was doing the right thing – he wanted us all provided for, and he wanted everything settled. He was getting migraines, and he had gotten it into his head that he had a brain tumor.&quot;&lt;/p&gt;
+            &lt;p&gt;Hank can now relate to the pressure his father must have felt.&lt;/p&gt;
+            &lt;p&gt;&quot;The first year I ran the park, I got a kidney stone,&quot; Hank said. &quot;There was definitely a learning curve for me. It took me two or three seasons to get on my feet.&quot;&lt;/p&gt;
+            &lt;p&gt;The current Gehlhaus generation is responsible for one of the biggest expansions to the park, with the addition of Runaway Rapids in 1996, one of the first water parks in New Jersey.&lt;/p&gt;
+            &lt;p&gt;&quot;Even with the cool summer we&#039;ve had,&quot; Hank said, &quot;Runaway Rapids has remained very popular.&quot;&lt;/p&gt;
+            &lt;p&gt;More recently, the Gehlhaus family contended with superstorm Sandy, which destroyed the Wildcat rollercoaster and severely flooded and damaged many other parts of the park in October 2012.&lt;/p&gt;
+            &lt;p&gt;The vintage kiddie rides came apart and were scattered beyond Keansburg, but the amusement park eventually recovered and restored every piece.&lt;/p&gt;
+            &lt;p&gt;A new rollercoaster, the Looping Star, has been built to replace the Wildcat, pending state inspections.&lt;/p&gt;
+            &lt;p&gt;Neither hurricanes nor recessions can keep this place down for long. In addition to its vintage kiddie rides, Keansburg Amusement Park is known for its affordability and its friendly staff, with employees in their teens as well as in their late 70s. Pull into the sandy parking lot by the batting cages and you will be greeted warmly by the attendant. Plus, it only will set you back $5 to park there, all day.&lt;/p&gt;
+            &lt;p&gt;&quot;We want to make it affordable for everyone,&#039;&#039; Hank said. &quot;We want families to be able to come back again and again.&quot;&lt;/p&gt;
+            &lt;p&gt;As a child, Hank Gehlhaus was well accustomed to the razzle-dazzle of his family&#039;s business, because he tagged along with his father during the work day.&lt;/p&gt;
+            &lt;p&gt;&quot;I never lost sight of it, how magical it was,&quot; he said.&lt;/p&gt;
+            &lt;p&gt;The amusement park changed little from the 1930s to &#039;50s, Hank said, but subsequent decades brought demand for continuous novelty.&lt;/p&gt;
+            &lt;p&gt;&quot;It&#039;s a measure of our fast-paced society that everybody always wants to see something new,&quot; Hank said. &quot;We really prefer the old stuff, but we always mix it up so there is something new for people, however small it might be. Like, my wife found these cotton-candy cones that are LED-driven, so that when you buy cotton candy at night, you walk around the park and it looks like you&#039;re eating something that&#039;s lit up.&quot;&lt;/p&gt;
+            &lt;p&gt;One thing Hank expects to remain constant is his family&#039;s connection to Keansburg Amusement Park.&lt;/p&gt;
+            &lt;p&gt;&quot;I have five children,&quot; he said, &quot;and they&#039;re eager to take it over when I&#039;m ready to step down.&quot;&lt;/p&gt;</column>
+            <column name="href_param">founded-in-1904-keansburg-amusement-park-still-charms</column>
+            <column name="created_at">2015-04-06 15:44:45</column>
+            <column name="updated_at">2015-04-06 15:44:45</column>
+            <column name="link_css">css-news</column>
+        </table>
+        <table name="menu">
+            <column name="id">9</column>
+            <column name="category_id">13</column>
+            <column name="title">People are saying……</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/go-karts-5.jpg</column>
+            <column name="note">“A treasure of an amusement park in New Jersey. Waterpark and rides at a great price, never crowded and it has an old soul feeling about it. Every time we go to Keansburg we always have an awesome time and many fun memories. I wouldn’t go anywhere else.” Evelyn Lopes Delgado “A great place to […]</column>
+            <column name="description">&lt;h1&gt;People are saying……&lt;/h1&gt;
+            &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2015/04/go-karts-5.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;p&gt;“A treasure of an amusement park in New Jersey. Waterpark and rides at a great price, never crowded and it has an old soul feeling about it. Every time we go to Keansburg we always have an awesome time and many fun memories. I wouldn’t go anywhere else.” Evelyn Lopes Delgado&lt;/p&gt;
+            &lt;p&gt;“A great place to take the family. Friendly atmosphere. Will definitely be back to visit.” – Erik Winits &lt;/p&gt;</column>
+            <column name="href_param">people-are-saying</column>
+            <column name="created_at">2015-04-06 15:44:45</column>
+            <column name="updated_at">2015-04-06 15:44:45</column>
+            <column name="link_css">css-news</column>
+        </table>
+        <table name="menu">
+            <column name="id">10</column>
+            <column name="category_id">13</column>
+            <column name="title">Construction begins on new Keansburg roller coaster to replace the ‘Wild Cat’ that was destroyed by Sandy</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2014/01/keansburg-construction.jpg</column>
+            <column name="note">This article originally appeared on New Jersey 12 KEANSBURG - Construction has begun on a new ride at Keansburg Amusement Park to replace the &quot;Wild Cat&quot; coaster mangled by the superstorm. The foundation is down for the new roller coaster, and parts of it have also arrived. It will have a loop taking passengers upside […]</column>
+            <column name="description">&lt;h1&gt;Construction begins on new Keansburg roller coaster to replace the ‘Wild Cat’ that was destroyed by Sandy&lt;/h1&gt;
+            &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2014/01/keansburg-construction.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;span class=&quot;small&quot;&gt;
+                &lt;p&gt;This article originally appeared on &lt;a href=&quot;https://patch.com/new-jersey/middletown-nj/keansburg-amusement-parks-opens-season-april-8&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;New Jersey 12&lt;/a&gt;&lt;/p&gt;
+            &lt;/span&gt;
+            &lt;p&gt;KEANSBURG - Construction has begun on a new ride at Keansburg Amusement Park to replace the &quot;Wild Cat&quot; coaster mangled by the superstorm.&lt;/p&gt;
+            &lt;p&gt;The foundation is down for the new roller coaster, and parts of it have also arrived. It will have a loop taking passengers upside down.&lt;/p&gt;
+            &lt;p&gt;&quot;Keansburg was known for the roller coaster amongst a couple of other major attractions,&quot; says Katie Johnson, of Keansburg Amusement Park. &quot;And I think that this particular roller coaster is going to bring back the new blood.&quot;&lt;/p&gt;
+            &lt;p&gt;Right now the sign on it reads &quot;Looping Star,&quot; but a spokesperson says the amusement park will have an online contest to come up with an original name.&lt;/p&gt;
+            &lt;p&gt;The roller coaster is scheduled for completion by &lt;b&gt;March 1&lt;/b&gt;.&lt;/p&gt;</column>
+            <column name="href_param">construction-begins-on-new-keansburg-roller-coaster-to-replace-the-wild-cat-that-was-destroyed-by-sandy</column>
+            <column name="created_at">2014-01-13 15:45:32</column>
+            <column name="updated_at">2014-01-13 15:45:32</column>
+            <column name="link_css">css-news</column>
+        </table>
+        <table name="menu">
+            <column name="id">11</column>
+            <column name="category_id">13</column>
+            <column name="title">Sandy-ravaged Keansburg Amusement Park ready for Easter after exhausting repairs</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2013/04/keansburg-easter.jpg</column>
+            <column name="note">This article originally appeared on New Jersey 12 Pattie Cappuccio never doubted it. Not even the day after the storm, when her game booths at Keansburg Amusement Park were covered in knee-deep sand, left behind by chest-high flood waters. &quot;I knew Bill and Hank (Gehlhaus) would get us open. I really did,&quot; she said, as […]</column>
+            <column name="description">&lt;h1&gt;Sandy-ravaged Keansburg Amusement Park ready for Easter after exhausting repairs&lt;/h1&gt;
+            &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2013/04/keansburg-easter.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;span class=&quot;small&quot;&gt;
+                &lt;p&gt;This article originally appeared on &lt;a href=&quot;https://patch.com/new-jersey/middletown-nj/keansburg-amusement-parks-opens-season-april-8&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;New Jersey 12&lt;/a&gt;&lt;/p&gt;
+            &lt;/span&gt;
+            &lt;p&gt;Pattie Cappuccio never doubted it.&lt;/p&gt;
+            &lt;p&gt;Not even the day after the storm, when her game booths at Keansburg Amusement Park were covered in knee-deep sand, left behind by chest-high flood waters.&lt;/p&gt;
+            &lt;p&gt;&quot;I knew Bill and Hank (Gehlhaus) would get us open. I really did,&quot; she said, as she opened the family-run concession for their 26th season. &quot;I knew their crew would get us ready.&quot;&lt;/p&gt;
+            &lt;p&gt;So there she was last weekend, with colorful, stuffed dolls pegged to walls and hanging overhead; prizes for a game where over-sized basketballs and undersized hoops make winning harder than it looks, easier said than done.&lt;/p&gt;
+            &lt;p&gt;Same goes for the park’s opening.&lt;/p&gt;
+            &lt;p&gt;In the days following Hurricane Sandy, the Gehlhaus brothers promised their park would open by Easter, just like every year.&lt;/p&gt;
+            &lt;p&gt;This promise was made while their rides were broken and scattered around town, carried off by the Raritan Bay waves that the flattened dunes and severely damaged every arcade building and food stand at the park.&lt;/p&gt;
+            &lt;p&gt;&quot;One of the bumper cars — the green one — was in my parking spot,&quot; said C.C. Wereta, who lives in a condo a block away, as she walked the midway Sunday. Worse, a funhouse mannequin floated into her garage. &quot;I thought it was somebody who drowned.&quot;&lt;/p&gt;
+            &lt;p&gt;The only drowning, though, would be in work. Five months of nothing but eat, work and sleep, has drained them.&lt;/p&gt;
+            &lt;p&gt;&quot;Yeah, we’re tired,&quot; said Hank Gehlhaus, whose eyes show the weariness. &quot;And it’as been tough. We just got our electricity back last week, because JCP&amp;L ran out of meters. But we’re back, and we want to show people we’re better than we were.&quot;&lt;/p&gt;
+            &lt;p&gt;The grand opening is this weekend, and Hank Gehlhaus said the park will be about &quot;70 percent&quot; ready.&lt;/p&gt;
+            &lt;p&gt;&quot;(Last) weekend was a soft opening,&quot; said Bill Gehlhaus. &quot;We wanted people to see how far we’ve come and we’re selling our 2-for-1 discount tickets for the season.&quot;&lt;/p&gt;
+            &lt;p&gt;So while a couple of kiddie rides went ‘round and ‘round at one end of the park, and go-karts raced at the other, electricians and plumbers and carpenters nearly outnumbered visitors along the macadam midway.&lt;/p&gt;
+            &lt;p&gt;One of those plumbers was Stan Ambro, who is also the owner of &quot;Hollowgraves,&quot; a haunted mansion that was on Seaside’s Funtown Pier. The house is now on three trailers on a Keansburg Amusement Park back lot, and Ambro hopes to have it erected and reopened soon.&lt;/p&gt;
+            &lt;p&gt;&quot;I’m glad to be back home,&quot; said Ambro, who started at Keansburg in 2002. &quot;The Gehlhauses are showmen. They understand the business.&quot;&lt;/p&gt;
+            &lt;p&gt;The park has been in the Gehlhaus family for over 100 years, except for a 23-year span when it was sold by the brothers’ father. They bought it back in 1995.&lt;/p&gt;
+            &lt;p&gt;&quot;This is what we do,&quot; Bill Gehlhaus said days after the storm. &quot;We’re not going anywhere.&quot;&lt;/p&gt;
+            &lt;p&gt;But they will continue now without two star attractions. The Wildcat roller coaster, the ride closest to the bay, was buried and bent by sand. Hank Gehlhaus said it would have cost $500,000 to restore, and &quot;we just didn’t think it was worth it.&quot;&lt;/p&gt;
+            &lt;p&gt;The vintage bumper cars were another casualty.&lt;/p&gt;
+            &lt;p&gt;&quot;That hurts, from an emotional standpoint,&quot; Hank Gehlhaus said. &quot;They were in service in this park for 50 years. It’s a shame.&quot;&lt;/p&gt;
+            &lt;p&gt;The Wildcat will be replaced by a newer, looping coaster from Canada; new bumper cars are coming from the Italian ridemaker Bertazzon.&lt;/p&gt;
+            &lt;p&gt;&quot;We also have a new swing ride, from a park in Alabama,&quot; Hank Gehlhaus said.&lt;/p&gt;
+            &lt;p&gt;The heart of the park — the old-school kiddie rides — remain intact. All the engines and electrical circuits were rebuilt, and last weekend, the fire engines and sky rockets were doing their usual laps, with children clutching steering wheels while parents smiled and took pictures from outside the gates.&lt;/p&gt;
+            &lt;p&gt;Joe Schmidt was there with his daughter, Julia, 5, making her memories while reliving his own.&lt;/p&gt;
+            &lt;p&gt;&quot;We came here at least once a week, when I was a kid,&quot; said Schmidt, an elementary school principal. &quot;When I think of all I got out of this place, I wanted to come down and support them. I’m glad they rebuilt it.&quot;&lt;/p&gt;</column>
+            <column name="href_param">sandy-ravaged-keansburg-amusement-park-ready-for-easter-after-exhausting-repairs</column>
+            <column name="created_at">2013-04-02 15:46:02</column>
+            <column name="updated_at">2013-04-02 15:46:02</column>
+            <column name="link_css">css-news-11</column>
+        </table>
+        <table name="menu">
+            <column name="id">12</column>
+            <column name="category_id">13</column>
+            <column name="title">Keansburg Amusement Park vows to rebuild after Hurricane Sandy destruction</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2012/11/hurricane-sandy-rebuild.jpg</column>
+            <column name="note">This article originally appeared on NJ.com KEANSBURG — Just days after getting battered by Hurricane Sandy, the co-owner of the Keansburg Amusement Park and Runaway Rapids Waterpark has already set a reopening date: April 8, 2013. That gives the Gehlhaus Family and its crew five months five months to clear out several feet of sand […]</column>
+            <column name="description">&lt;h1&gt;Keansburg Amusement Park vows to rebuild after Hurricane Sandy destruction&lt;/h1&gt;
+            &lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2012/11/hurricane-sandy-rebuild.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;span class=&quot;small&quot;&gt;
+                &lt;p&gt;This article originally appeared on &lt;a href=&quot;https://patch.com/new-jersey/middletown-nj/keansburg-amusement-parks-opens-season-april-8&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;NJ.com&lt;/a&gt;&lt;/p&gt;
+            &lt;/span&gt;
+            &lt;p&gt;KEANSBURG — Just days after getting battered by Hurricane Sandy, the co-owner of the Keansburg Amusement Park and Runaway Rapids Waterpark has already set a reopening date: April 8, 2013.&lt;/p&gt;
+            &lt;p&gt;That gives the Gehlhaus Family and its crew five months five months to clear out several feet of sand caked inside the roller coasters and other rides damaged by the estimated 6-foot wall of water that pummeled the 108-year-old amusement park.&lt;/p&gt;
+            &lt;p&gt;About 300,000 people visit the water park, amusement park and concession stands every year. &quot;The clock is ticking and we&#039;ll be ready for them,&quot; Gehlhaus said with enthusiasm.&lt;/p&gt;
+            &lt;p&gt;Gehlhaus said he and his brother have invested $4 million into the family business over the last 17 years, adding the water park and 30 rides, so they could one day turn it over to the next generation to run.&lt;/p&gt;
+            &lt;p&gt;Rebuilding &quot;will be a challenge,&quot; but one he would &quot;attack with a lot of energy,&quot; and help from a crew of about 25 so far.&lt;/p&gt;
+            &lt;p&gt;They&#039;ve already gotten off to a good start. In the past two days, he and his crew have found portions of fence, machinery and pieces of disassembled rides that were stored away for the season.&lt;/p&gt;
+            &lt;p&gt;&quot;We&#039;ve retrieved almost everything,&quot; some of it a half-mile inland on people&#039;s yards or alleyways, he said. &quot;Most everything will be cleaned and rehabilitated.&quot;&lt;/p&gt;
+            &lt;p&gt;Albert Marine Construction in Waretown also wasted no time in beginning work on restoring Keansburg shoreline.&lt;/p&gt;
+            &lt;p&gt;Just last week, the company had trucked in dredged sand to make 20-25-foot dunes. Sandy washed away all of their work. Two foremen on bulldozers returned Thursday to start over.&lt;/p&gt;
+            &lt;p&gt;&quot;There was three feet of sand inside the rides,&quot; said Nick Hauser, one of the foremen. &quot;They got banged up here really bad.&quot;&lt;/p&gt;</column>
+            <column name="href_param">keansburg-amusement-park-vows-to-rebuild-after-hurricane-sandy-destruction</column>
+            <column name="created_at">2012-11-01 15:46:32</column>
+            <column name="updated_at">2012-11-01 15:46:32</column>
+            <column name="link_css">css-news-11</column>
+        </table>
+        <table name="menu">
+            <column name="id">13</column>
+            <column name="category_id">17</column>
+            <column name="title">Mermaid Mondays @ Runaway Rapids</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2016/08/Mermaid-1.jpg</column>
+            <column name="note">Mondays starting 6/7/22</column>
+            <column name="description">&lt;p&gt;Yes, mermaids do exist! This is your chance to swim with a live mermaid!&lt;/p&gt;
+&lt;h2&gt;Most Mondays from 6/27-  8/29&lt;/h2&gt;
+&lt;p&gt;Call our ticket booth for more information 732-495-5241.&lt;/p&gt;</column>
+            <column name="href_param">mermaid-mondays-runaway-rapids</column>
+            <column name="created_at">2022-07-06 15:59:30</column>
+            <column name="updated_at">2022-07-06 15:59:30</column>
+            <column name="link_css">eventchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">14</column>
+            <column name="category_id">17</column>
+            <column name="title">Fireworks 1st of July</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/IMG_4401.jpg</column>
+            <column name="note">1st of july 2022</column>
+            <column name="description">&lt;p&gt;Celebrate America’s Birthday with FIREWORKS. Keansburg Amusement Park &amp; Runaway Rapids will light up Friday July 1st with our BIGGEST show ever! Spend the day at Keansburg Amusement Park &amp; Runaway Rapids and cap it off with one of the most beautiful fireworks display on the Jersey Shore! Free entry!&lt;/p&gt;</column>
+            <column name="href_param">fireworks-1st-of-july</column>
+            <column name="created_at">2022-07-01 16:00:06</column>
+            <column name="updated_at">2022-07-01 16:00:06</column>
+            <column name="link_css">eventchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">15</column>
+            <column name="category_id">17</column>
+            <column name="title">Jeep Jam &amp; Truck Show 2022</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2019/01/jeepjam-e1654104319345.jpeg</column>
+            <column name="note">june 18 2022</column>
+            <column name="description">&lt;p&gt;Family fun Jeep &amp; Truck Show&lt;/p&gt;
+                &lt;p&gt;REGISTRATION IS OPEN!!&lt;/p&gt;
+                &lt;p&gt;June 18 2022&lt;/p&gt;
+                &lt;p&gt;2pm to 6pm&lt;/p&gt;
+                &lt;p&gt;Space is Limited 250 Street spots Available&lt;/p&gt;
+                &lt;p&gt;Parking lot parking available for spectators as well.&lt;/p&gt;
+                &lt;p&gt;PayPal confirmation must be on registration form!&lt;/p&gt;
+                &lt;p&gt;PayPal - &lt;a href=&quot;https://www.facebook.com/flx/warn/?u=https%3A%2F%2Fpy.pl%2F2JBu6p%3Ffbclid%3DIwAR3RO5phsEqJJ58-_cfMrHgyZssW1bg0Y2F1GqgJf_XUhyTFLjEfLrrt5Mw&amp;h=AT3rA-Px13rlexVRTcmNrPfogAbRL86GvT0xP-UMXcjkXNf3q8RN2MugDSIYB-daOJ4k76fgvXtcY5vZCjpR3AIT6dNkjIk0pIgGRSruR9vk_PpNkEBT4xWxe6R2sbbuElZ8ib1V6_k8PocM1_CZAZia1aD_neCsWejQMwbXkPXkeh1VJeKould_nmNjAzAC0X_bu5Ss3SqGGO3q5g&quot;&gt;https://py.pl/2JBu6p&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;Registration Form - &lt;a href=&quot;https://docs.google.com/forms/d/1uMCQ7E00LbvqhrzKKq1IIPNcC5_VsgSlQ3xUYNMiQfM/viewform?fbclid=IwAR0m1yW794Pp6UgYHZO_oYQbF5uUvJ-mN1Olg2JeNomu2CWwrL8JrWPaXZg&amp;edit_requested=true&quot;&gt;https://docs.google.com/.../1uMCQ7E00LbvqhrzK.../viewform&lt;/a&gt;&lt;/p&gt;</column>
+            <column name="href_param">jeep-jam-truck-show-2022</column>
+            <column name="created_at">2022-06-18 16:00:35</column>
+            <column name="updated_at">2022-06-18 16:00:35</column>
+            <column name="link_css">eventchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">16</column>
+            <column name="category_id">17</column>
+            <column name="title">Bark in the Waterpark 2022</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2019/01/IMG_2958-e1654105003676.jpg</column>
+            <column name="note">september 11 2022</column>
+            <column name="description">&lt;img src=&quot;https://keansburgamusementpark.com/wp-content/uploads/2017/04/barkinwaterpark-150x150.jpg&quot; alt=&quot;&quot;&gt;
+                &lt;h4&gt;Sunday, September 11th 2022 4pm-6pm&lt;/h4&gt;
+                &lt;p&gt;Guests can register to bring their dogs to play in the splash areas in the park. A portion of the proceeds will be donated to the Monmouth County SPCA.&lt;/p&gt;
+                &lt;p&gt;Link for tickets coming soon!&lt;/p&gt;</column>
+            <column name="href_param">bark-in-the-waterpark-2022</column>
+            <column name="created_at">2022-11-11 16:01:04</column>
+            <column name="updated_at">2022-11-11 16:01:04</column>
+            <column name="link_css">eventchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">17</column>
+            <column name="category_id">14</column>
+            <column name="title">Blue Bay Inn</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2018/12/IMG_4583_P-300x300.jpg</column>
+            <column name="note">Just fifteen minutes away for our park, Blue Bay Inn is a charming boutique hotel in Atlantic Highlands. It&#039;s the perfect place to stay to enjoy all the pleasures of nearby Manhattan and The Jersey Shore at an affordable rate! Located close to the waterfront, guests are just footsteps from the shore where they can take in stunning views of the Manhattan skyline.</column>
+            <column name="description">51 First Avenue
+&lt;br&gt;
+Atlantic Highlands, NJ, 07716
+&lt;br&gt;
+732.708.9600
+&lt;br&gt;
+info@bluebayinn.com</column>
+            <column name="href_param">blue-bay-inn</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">accommodations</column>
+        </table>
+        <table name="menu">
+            <column name="id">18</column>
+            <column name="category_id">14</column>
+            <column name="title">Middletown Quality Inn</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2018/12/37025537-300x240.jpg</column>
+            <column name="note">This gem of a hotel in Middletown is a short drive away from the park. The Quality Inn, is your ideal hotel when visiting the Jersey Shore and the Downtown Red Bank area.  All the expected traveler amenities are available to you, including their complimentary hot breakfast, served daily.</column>
+            <column name="description">750 State Route 35 South
+&lt;br&gt;
+Middletown, NJ, 07748
+&lt;br&gt;
+732.671.3400
+&lt;br&gt;
+gm.nj187@choicehotels.com</column>
+            <column name="href_param">middletown-quality-inn</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">accommodations</column>
+        </table>
+        <table name="menu">
+            <column name="id">19</column>
+            <column name="category_id">14</column>
+            <column name="title">Holiday Inn Hazlet</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2018/12/download.jpg</column>
+            <column name="note">The holiday Inn is just a ten minute drive from our amusement park. With affordable prices and great amenities, you can&#039;t beat staying here. Plus kids stay and eat free!</column>
+            <column name="description">2870 Highway 35
+&lt;br&gt;
+Hazlet, NJ, 07730
+&lt;br&gt;
+732.888.2000</column>
+            <column name="href_param">holiday-inn-hazlet</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">accommodations</column>
+        </table>
+        <table name="menu">
+            <column name="id">20</column>
+            <column name="category_id">19</column>
+            <column name="title">Nickerson’s Ice Cream</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/icecreamwafflecone.jpg</column>
+            <column name="note">Nickerson’s Ice cream has been serving freshly made hard ice cream since 1946 . Choose a cone, sundae,milkshake, or our crowd favorite; a famous waffle and ice cream sandwich! The combinations are endless with toppings like hot fudge, caramel, sprinkles, and more! </column>
+            <column name="description"></column>
+            <column name="href_param">nickerson-s-ice-cream</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">21</column>
+            <column name="category_id">19</column>
+            <column name="title">Cheesy’s Pizza: OPEN UNDER NEW OWNERSHIP 2021</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/IMG_1661-2048x1536.jpeg</column>
+            <column name="note">Craving some traditional boardwalk pizza? Cheesy’s is the place for you! Toppings include pepperoni, sausage, peppers, onions, and more! Traditional, Sicilian, or garlic knots! Yum!</column>
+            <column name="description"></column>
+            <column name="href_param">cheesy-s-pizza-open-under-new-ownership-2021</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">22</column>
+            <column name="category_id">19</column>
+            <column name="title">CJ’s Spot</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/kates-place.jpg</column>
+            <column name="note">Funnel cake &amp; fun traditional Jersey Shore boardwalk food!</column>
+            <column name="description"></column>
+            <column name="href_param">cj-s-spot</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">23</column>
+            <column name="category_id">19</column>
+            <column name="title">Girardi’s Kabobs</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/pexels-photo-604660.jpg</column>
+            <column name="note">Our original Fresh Grilled 1/4lb. Pork &amp; Chicken Kabobs were established here in the park in 1997.
+Also serving traditional Sabrett Hotdogs and other boardwalk favorites.</column>
+            <column name="description"></column>
+            <column name="href_param">girardi-s-kabobs</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">24</column>
+            <column name="category_id">19</column>
+            <column name="title">Dippin’ Dots</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/unspecified-2.jpg</column>
+            <column name="note">Not your traditional scoop, Dippin Dots is the cool way to enjoy an old favorite. Enjoy several unique flavors of this delicious dot delicacy!</column>
+            <column name="description"></column>
+            <column name="href_param">dippin-dots</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">25</column>
+            <column name="category_id">19</column>
+            <column name="title">Coastal Ice Cream</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/shutterstock_82222750.jpg</column>
+            <column name="note">Enjoy a boardwalk favorite! Traditional Soft Served Ice Cream! Top off your treat with one of our several delicious toppings or order a Sundae, Thick-Shake, Slushie or Frozen Yogurt!</column>
+            <column name="description"></column>
+            <column name="href_param">coastal-ice-cream</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">26</column>
+            <column name="category_id">19</column>
+            <column name="title">Pizza V</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/pizza-v.jpg</column>
+            <column name="note">A boardwalk tradition, Pizza V serves classic thin crust Jersey pizza!</column>
+            <column name="description"></column>
+            <column name="href_param">pizza-v</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">27</column>
+            <column name="category_id">19</column>
+            <column name="title">Nickersons</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/nickersons.jpg</column>
+            <column name="note">This open air eatery has all of your classic boardwalk favorites from sausage sandwiches and cheesesteaks to hamburgers and hotdogs. You can find something for everyone! And don’t forget to add some delicious cheese fries to your order.</column>
+            <column name="description"></column>
+            <column name="href_param">nickersons</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">28</column>
+            <column name="category_id">19</column>
+            <column name="title">Snowie Hawaiian Shaved Ice</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/shaved-ice.jpg</column>
+            <column name="note">A cool treat on a hot summer day, Snowie shaved ice comes in fun flavors to go!</column>
+            <column name="description"></column>
+            <column name="href_param">snowie-hawaiian-shaved-ice</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">29</column>
+            <column name="category_id">19</column>
+            <column name="title">Miami Club</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/miami-club-raw-bar.jpg</column>
+            <column name="note">Serving up the best seafood, the Miami Club offers a raw bar, seafood, burgers and the best homemade clam chowder in the Bayshore. Stop in for a Sugar Island rum bucket or our twist on the traditional Rum &amp; Coke, an Island &amp; Coke. The Miami Club offers a clean friendly sit-down atmosphere to order up food and drinks.</column>
+            <column name="description"></column>
+            <column name="href_param">miami-club</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">30</column>
+            <column name="category_id">19</column>
+            <column name="title">Heidelberg – Now Open!!</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/unspecified-1.jpg</column>
+            <column name="note">Established in 1934, enjoy one of Keansburg Amusement Park&#039;s oldest eateries! Famed hot dogs are again available along with German beer!</column>
+            <column name="description"></column>
+            <column name="href_param">heidelberg--now-open</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">31</column>
+            <column name="category_id">19</column>
+            <column name="title">Sam’s Snack Shack</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/65969426_2296696633727942_6903619514059980800_n.jpg</column>
+            <column name="note">Delicious boardwalk snacks to eat on the go!</column>
+            <column name="description"></column>
+            <column name="href_param">sam-s-snack-shack</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">32</column>
+            <column name="category_id">19</column>
+            <column name="title">Glenda’s Great Fries</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/glenda-great-fries.jpg</column>
+            <column name="note">Classic boardwalk hand cut fries served with vinegar. A Keansburg Amusement Park boardwalk tradition!</column>
+            <column name="description"></column>
+            <column name="href_param">glenda-s-great-fries</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">33</column>
+            <column name="category_id">19</column>
+            <column name="title">Mambo Nando’s : NEW 2021</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/IMG_2960.jpg</column>
+            <column name="note">Mambo Nando&#039;s Puerto Rican American cuisine- NEW 2021. View their menu here:&lt;a href=&quot;http://&quot;&gt;mambonandos_menu_v5&lt;/a&gt;
+&lt;br&gt;
+Click here to visit their website:&lt;a href=&quot;https://mambonandosrestaurant.com/&quot;&gt;mambonandos.com&lt;/a&gt;</column>
+            <column name="description"></column>
+            <column name="href_param">mambo-nando-s-new-2021</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">34</column>
+            <column name="category_id">19</column>
+            <column name="title">Zeppole’s</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/zeppole.jpg</column>
+            <column name="note">The absolute best zeppole on the Jersey Shore! Freshly made daily.</column>
+            <column name="description"></column>
+            <column name="href_param">zeppole-s</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">35</column>
+            <column name="category_id">19</column>
+            <column name="title">Cotton Candy</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/cottoncandy.jpg</column>
+            <column name="note">Serving Cotton Candy, Fresh Lemonade, Churros, Pretzels and Refreshments!</column>
+            <column name="description"></column>
+            <column name="href_param">cotton-candy</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">36</column>
+            <column name="category_id">19</column>
+            <column name="title">Boardwalk Grill at the Pavilion Bar</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/fried-chicken-chicken-fried-crunchy-60616.jpg</column>
+            <column name="note">New venue, Boardwalk Grill at the Pavilion Bar, will serve up delicious gyros and more!</column>
+            <column name="description"></column>
+            <column name="href_param">boardwalk-grill-at-the-pavilion-bar</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">37</column>
+            <column name="category_id">19</column>
+            <column name="title">Flavor Burst</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2016/01/icecream.jpg</column>
+            <column name="note">Flavor Burst offers a variety of premium flavors from which to choose. The intrigue will capture your attention and the flavor that will bring you back for more.</column>
+            <column name="description"></column>
+            <column name="href_param">flavor-burst</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">foodchil</column>
+        </table>
+        <table name="menu">
+            <column name="id">38</column>
+            <column name="category_id">12</column>
+            <column name="title">Breaking Ground</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/sharkproof-net_web.png</column>
+            <column name="note">Park founder William Gehlhaus and his associates purchase some waterfront property to build a summer resort.</column>
+            <column name="description">1904</column>
+            <column name="href_param">breaking-ground</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">history</column>
+        </table>
+        <table name="menu">
+            <column name="id">39</column>
+            <column name="category_id">12</column>
+            <column name="title">Keansburg Steamboat Company</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/ferry_web.png</column>
+            <column name="note">New Yorkers can now take a 50-cent roundtrip voyage from Battery Park to Keansburg&#039;s newest boardwalk &amp; attractions.</column>
+            <column name="description">1910</column>
+            <column name="href_param">keansburg-steamboat-company</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">history</column>
+        </table>
+        <table name="menu">
+            <column name="id">40</column>
+            <column name="category_id">12</column>
+            <column name="title">Mystery Ride Opens</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/spook-house-1940s.jpg</column>
+            <column name="note">One of the world’s oldest operating dark rides in the world up until Hurricane Sandy, The Spook Housefirst opens.</column>
+            <column name="description">1931</column>
+            <column name="href_param">mystery-ride-opens</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">history</column>
+        </table>
+        <table name="menu">
+            <column name="id">41</column>
+            <column name="category_id">12</column>
+            <column name="title">The Next Generation</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/newspaper_detail_web1.png</column>
+            <column name="note">The grandsons of William Gehlhaus purchase the park.</column>
+            <column name="description">1995</column>
+            <column name="href_param">the-next-generation</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">history</column>
+        </table>
+        <table name="menu">
+            <column name="id">42</column>
+            <column name="category_id">12</column>
+            <column name="title">A Second Park!</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/2004-11-09-13.26.50.jpg</column>
+            <column name="note">Runaway Rapids Waterpark is built in 9 short months and brings a new era to the park.</column>
+            <column name="description">1996</column>
+            <column name="href_param">a-second-park</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">history</column>
+        </table>
+        <table name="menu">
+            <column name="id">43</column>
+            <column name="category_id">12</column>
+            <column name="title">Superstorm Sandy</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/2012-10-31-13.53.58-2.jpg</column>
+            <column name="note">Following a great summer, one of the most devastating storms in recent memory upends the park and surrounding communities.</column>
+            <column name="description">2012</column>
+            <column name="href_param">superstorm-sandy</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">history</column>
+        </table>
+        <table name="menu">
+            <column name="id">44</column>
+            <column name="category_id">12</column>
+            <column name="title">Back in Action!</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/Park-Reopens.jpg</column>
+            <column name="note">The parks re-open after a great deal of teamwork, dedication, and repairing in Sandy’s wake.</column>
+            <column name="description">2013</column>
+            <column name="href_param">back-in-action</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">history</column>
+        </table>
+        <table name="menu">
+            <column name="id">45</column>
+            <column name="category_id">12</column>
+            <column name="title">The Summer of Fun!</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/04/Frog-Hopper.jpg</column>
+            <column name="note">You make your triumphant return to Keansburg Amusement Park &amp; Runaway Rapids waterpark!</column>
+            <column name="description">2015</column>
+            <column name="href_param">the-summer-of-fun</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">history</column>
+        </table>
+        <table name="menu">
+            <column name="id">46</column>
+            <column name="category_id">2</column>
+            <column name="title">Lazy River</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2020/02/lazyriver.jpeg</column>
+            <column name="note">Float down our lazy river all day long. Relax and soak up the sun.</column>
+            <column name="description"></column>
+            <column name="href_param">lazy-river</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">47</column>
+            <column name="category_id">2</column>
+            <column name="title">Castaways Creek</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/castawaycreek-waterpark.png</column>
+            <column name="note">Continuous fun awaits as you enter the crazy/lazy river. You can gently lull downstream the river in a tube or choose to play with all the interactive activities along the way. The rivers is 4ft deep at maximum height. Interaction is part of the fun on the river. Water detonators along the outside of the river release air bubbles to surprise tubers or cause a water explosion. There are also swinging fish to grab and waterfalls to go under!
+
+Children under 42″ must wear a life jacket and be accompanied by a responsible adult.
+Riders must use single or double inflatable tube.
+Entry and exit on designated staired areas only.</column>
+            <column name="description"></column>
+            <column name="href_param">castaways-creek</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">48</column>
+            <column name="category_id">2</column>
+            <column name="title">Mountain Blast</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/mountainblast-waterpark.png</column>
+            <column name="note">Double your fun on this double tube and double wide slide. You can ride alone or with a partner but you will find it hard to control the spinning of the tube as you plunge down this rolling slide.
+**
+Under 48″ and non swimmers must wear a life jacket. Must be 42″ or more to ride. Maximum combined weight of 400 lbs.</column>
+            <column name="description"></column>
+            <column name="href_param">mountain-blast</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">49</column>
+            <column name="category_id">2</column>
+            <column name="title">White Slide #1</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/powertower1-waterpark.png</column>
+            <column name="note">All attractions in the Power Tower section are geared primarily for children. The White slides are located in the Power Tower.
+**
+Body slide only. Tubes not allowed. 1 person at a time.</column>
+            <column name="description"></column>
+            <column name="href_param">white-slide-1</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">50</column>
+            <column name="category_id">2</column>
+            <column name="title">Interactive Play</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/interactiveplay-waterpark.png</column>
+            <column name="note">Splash pool from 0″ to 12″ of water with all interactive water play. Children can get hands-on fun with water valves, sprayers, paddle wheels, water guns and more.</column>
+            <column name="description"></column>
+            <column name="href_param">interactive-play</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">51</column>
+            <column name="category_id">2</column>
+            <column name="title">Water Mushroom</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/watermushroom-waterpark.png</column>
+            <column name="note">Splash pool from 0″ to 12″ of water with all interactive water play. Gentle waterfall structure that continuously spills out water.</column>
+            <column name="description"></column>
+            <column name="href_param">water-mushroom</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">52</column>
+            <column name="category_id">2</column>
+            <column name="title">Black Slide</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/powertower3-waterpark.png</column>
+            <column name="note">All attractions in the Power Tower section are geared primarily for children. The Black slide is located in the Power Tower.
+** 
+Children 16  and under. Must be 42″ or taller. No one over 200 lbs allowed. Must have a mat, not a body slide. 1 person at a time.</column>
+            <column name="description"></column>
+            <column name="href_param">black-slide</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">53</column>
+            <column name="category_id">2</column>
+            <column name="title">VooDoo Encounter</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/voodooencounter-waterpark.png</column>
+            <column name="note">Twist and Splash! This is a pipestyle high-speed tube slide that bends and twists through an open and closed black tube.
+** 
+Must be 42″ or taller. Under 48″ must wear life jacket. Combined weight of riders may not exceed 300 lbs. No single riders.  All non-swimmers and novice swimmers are required to wear a life jacket.</column>
+            <column name="description"></column>
+            <column name="href_param">voodoo-encounter</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">54</column>
+            <column name="category_id">2</column>
+            <column name="title">Volcanic Revenge</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/volcanicrevenge-waterpark.png</column>
+            <column name="note">Defy gravity on this uphill waterslide. After you and your partner plunge down hill, the speed propels you back uphill and then down again. What an experience!
+
+Under 42&quot; cannot ride.  All riders 42&quot;-48&quot; are required to wear a life jacket.  New swimmers and novice swimmers must wear a life jacket regardless of height.</column>
+            <column name="description"></column>
+            <column name="href_param">volcanic-revenge</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">55</column>
+            <column name="category_id">2</column>
+            <column name="title">Nestea Plunge</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/nesteaplunge2-waterpark.png</column>
+            <column name="note">Pretend you are Tarzan-type rope swing that allow guests to test their acrobatic skills under the watchful eye of a lifeguard.
+ 
+Must be 48″ or taller.  If you cannot swim or are a novice swimmer you must wear a life jacket.  Single riders only. Splash down pool is 10 ft.  Must be able to support own weight. </column>
+            <column name="description"></column>
+            <column name="href_param">nestea-plunge</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">56</column>
+            <column name="category_id">2</column>
+            <column name="title">Soaring Thunder</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/soaringthunder-waterpark.png</column>
+            <column name="note">Grab your mat and plunge head-first down this twisty and curving steep slide that sends riders quickly soaring and banking the sides as they speed down.
+ 
+Must be 48&quot; or taller to ride. Single riders only. Toboggan-style mat required.</column>
+            <column name="description"></column>
+            <column name="href_param">soaring-thunder</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">57</column>
+            <column name="category_id">2</column>
+            <column name="title">Mega Bunga Falls</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/megabungafalls-waterpark.png</column>
+            <column name="note">“Short and steep” is the idea behind this slide duo. Anyone who loves a thrill will enjoy the ride as they zip down feet first and drop into the splashdown pool.
+ 
+Must be 42″ or taller. Under 48″ must wear a life jacket. Single riders only. Splash down pool in 10 ft.  All non-swimmers and novice swimmers are required to wear a life jacket.   Under 42&quot; cannot ride. </column>
+            <column name="description"></column>
+            <column name="href_param">mega-bunga-falls</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">58</column>
+            <column name="category_id">2</column>
+            <column name="title">Comfort Cove</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/minispapool-waterpark.png</column>
+            <column name="note">Warming pool located beneath Mega Bunga Falls where you can take a short respite.
+ 
+Under 42&quot; must wear a life jacket.</column>
+            <column name="description"></column>
+            <column name="href_param">comfort-cove</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">59</column>
+            <column name="category_id">2</column>
+            <column name="title">Magenta Slide</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/magentaslide-waterpark.png</column>
+            <column name="note">Splash pool from 0″ to 12″ of water with all interactive water play. Crawl tube allows children to crawl up or down.</column>
+            <column name="description"></column>
+            <column name="href_param">magenta-slide</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">60</column>
+            <column name="category_id">2</column>
+            <column name="title">White Slide #2</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/powertower2-waterpark.png</column>
+            <column name="note">All attractions in the Power Tower section are geared primarily for children. The White slides are located in the Power Tower.
+ 
+Body slide only. Tubes not allowed. 1 person at a time.</column>
+            <column name="description"></column>
+            <column name="href_param">white-slide-2</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">61</column>
+            <column name="category_id">2</column>
+            <column name="title">Lost Lagoon</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/lostlagoon-waterpark.png</column>
+            <column name="note">Relax and enjoy yourself in this moderately heated spa pool before and after hitting the major attractions.
+ 
+Under 42&quot; requires a life jacket.  No infants allowed.  Maximum of 30 minute time limit per person.</column>
+            <column name="description"></column>
+            <column name="href_param">lost-lagoon</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">62</column>
+            <column name="category_id">2</column>
+            <column name="title">Dark Green Slide</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/darkgreenslide-waterpark.png</column>
+            <column name="note">Splash pool from 0″ to 12″ of water with all interactive water play. Offers the younger ones the thrills of our major attractions in a much smaller scale.</column>
+            <column name="description"></column>
+            <column name="href_param">dark-green-slide</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">63</column>
+            <column name="category_id">2</column>
+            <column name="title">Side by Side Yellow Slides</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/yellowslides-waterpark.png</column>
+            <column name="note">Splash pool from 0″ to 12″ of water with all interactive water play. Short slides that sit next to each. Half the fun is climbing and playing your way to the top before sliding down.</column>
+            <column name="description"></column>
+            <column name="href_param">side-by-side-yellow-slides</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">64</column>
+            <column name="category_id">2</column>
+            <column name="title">Tipping Bucket &amp; Bridge</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/tippingbucket-waterpark.png</column>
+            <column name="note">Splash pool from 0″ to 12″ of water with all interactive water play. Bridge connects different areas of lagoon and is located under the “Tipping Bucket” so participants can enjoy the timed water release or not!</column>
+            <column name="description"></column>
+            <column name="href_param">tipping-bucket-bridge</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">65</column>
+            <column name="category_id">2</column>
+            <column name="title">Moon Walk</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/moonwalk-waterpark.png</column>
+            <column name="note">Splash pool from 0″ to 12″ of water with all interactive water play. Try your skills on this obstacle course which requires you to hold onto the rope above you while balancing and walking across the moon pads.
+ 
+Must be able to reach the ropes.</column>
+            <column name="description"></column>
+            <column name="href_param">moon-walk</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">66</column>
+            <column name="category_id">2</column>
+            <column name="title">Yellow Slide</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/yellowslide-waterpark.png</column>
+            <column name="note">All attractions in the Runaway Surf section are geared primarily for children. The Yellow slide is located in the Runaway Surf section.
+ 
+Body slide only. Tubes not allowed. 1 person at a time.</column>
+            <column name="description"></column>
+            <column name="href_param">yellow-slide</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">67</column>
+            <column name="category_id">2</column>
+            <column name="title">Light Green Slide</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/lightgreenslide-waterpark.png</column>
+            <column name="note">Splash pool from 0″ to 12″ of water with all interactive water play. Children keep using this slide again and again as they body slide down this water slide.</column>
+            <column name="description"></column>
+            <column name="href_param">light-green-slide</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">68</column>
+            <column name="category_id">2</column>
+            <column name="title">Frog Slide</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/frogslide-waterpark.png</column>
+            <column name="note">Splash pool from 0″ to 12″ of water with all interactive water play. Adorable slide designed specifically for our younger guests.</column>
+            <column name="description"></column>
+            <column name="href_param">frog-slide</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+        <table name="menu">
+            <column name="id">69</column>
+            <column name="category_id">2</column>
+            <column name="title">Toddler’s Reef</column>
+            <column name="thumbnail">https://keansburgamusementpark.com/wp-content/uploads/2015/03/toddlersreef-waterpark.png</column>
+            <column name="note">Designed especially for our toddlers to enjoy all the activities of the older guests on a very small and safe scale. Features include a dancing fountain, sand castles, climbable jeep, dolphins and more!
+ 
+Suitable for children 4 years old and younger.  All children must be accompanied by an adult.</column>
+            <column name="description"></column>
+            <column name="href_param">toddler-s-reef</column>
+            <column name="created_at">2023-01-02 21:31:48</column>
+            <column name="updated_at">2023-01-02 21:31:48</column>
+            <column name="link_css">runawayrapidschil</column>
+        </table>
+    </database>
+</pma_xml_export>
